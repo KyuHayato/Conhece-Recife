@@ -9,3 +9,34 @@
    border-bottom-left-radius: 20px !important;
    border-bottom-right-radius: 20px !important;
 }
+.button-dropdown{
+    border: solid 2px #343a40 !important;
+    background: #343a40 !important;
+    color: white !important;
+}
+
+.button-dropdown:hover{
+    background: #23272b !important;
+}
+.teste{
+    position: fixed;
+    height: 150px;
+    width: 399px;
+    z-index: -999;
+    /* left: 160px;
+    top: 273px; */
+    border-radius: nullpx;
+
+font-family: Fjalla One;
+font-style: normal;
+font-weight: normal;
+font-size: 119.21px;
+line-height: 50px;
+/* identical to box height */
+
+text-align: center;
+
+color: rgba(0, 0, 0, 0.08);
+
+}
+
