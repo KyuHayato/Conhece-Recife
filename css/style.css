@@ -21,7 +21,7 @@
 }
 
 .label-disabled {
-    position: fixed;
+    position: absolute;
     height: 150px;
     width: 399px;
     z-index: -999;
