@@ -21,18 +21,16 @@
 }
 
 .label-disabled {
-    position: absolute;
-    height: 150px;
-    width: 399px;
-    z-index: -999;
+    height: 0px;
     /* left: 160px;
     top: 273px; */
     border-radius: nullpx;
     font-family: Fjalla One;
     font-style: normal;
     font-weight: normal;
-    font-size: 119.21px;
-    line-height: 50px;
+    font-size: 98px;
+    line-height: 58px;
     text-align: center;
     color: rgba(0, 0, 0, 0.08);
+    white-space: nowrap;
 }
