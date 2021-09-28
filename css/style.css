@@ -34,3 +34,23 @@
     color: rgba(0, 0, 0, 0.08);
     white-space: nowrap;
 }
+
+#text-home {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.option-accessibility-text {
+    font-family: Archivo VF Beta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: justify;
+    letter-spacing: -0.015em;
+    text-transform: capitalize;
+}
