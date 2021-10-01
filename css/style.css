@@ -48,7 +48,7 @@
     font-family: Archivo VF Beta;
     font-style: normal;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 15px;
     text-align: justify;
     letter-spacing: -0.015em;
@@ -57,15 +57,29 @@
 
 #inverter {
     transform: rotate(180deg);
-    height:250px;
-    
-    
+    height: 250px;
 }
 
-#rectangle{
-    width:83%;
-    height:300px;
-    background:yellow;
+#rectangle {
+    width: 83%;
+    height: 300px;
+    background: yellow;
     position: absolute;
     opacity: 30%;
+}
+
+.input-form {
+    border: 2px solid LightBlue;
+    padding: 0.6rem;
+}
+
+.button-home {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    border: 2px solid LightBlue;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
