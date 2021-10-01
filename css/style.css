@@ -54,3 +54,18 @@
     letter-spacing: -0.015em;
     text-transform: capitalize;
 }
+
+#inverter {
+    transform: rotate(180deg);
+    height:250px;
+    
+    
+}
+
+#rectangle{
+    width:83%;
+    height:300px;
+    background:yellow;
+    position: absolute;
+    opacity: 30%;
+}
