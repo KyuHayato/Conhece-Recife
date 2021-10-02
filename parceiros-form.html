@@ -18,7 +18,7 @@
         </div>
     </header>
     <section>
-        <form method="POST" action="onsubmit"></form>
+
         <!-- Colocar dentro de um form que tenha um metodo POST para enviar a requisição  -->
         <div class="container">
             <div class="row mt-5">
@@ -29,76 +29,103 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class=" border border-dark p-4 radius" style="background: rgba(255, 247, 206, 0.33);">
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control radius input-form" placeholder="Nome do Parceiro">
+            <form method="POST" onsubmit="return validateForm(this);">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class=" border border-dark p-4 radius" style="background: rgba(255, 247, 206, 0.33);">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control radius input-form" name="partnerName"
+                                            id="partnerName" placeholder="Nome do Parceiro">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <div class="btn-group dropright">
+                                            <button type="button"
+                                                class="form-control btn-block radius input-form dropdown-toggle"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                                name="categoryPartner" id="categoryPartner">
+                                                <span style="padding-right: 13rem;">Categoria</span>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">
+                                                    <option value="0">Type</option>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <option value="0"> Another action</option>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <option value="1">Something else here</option>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <!-- Ajeitar a perfumaria, estilo direito do CSS -->
-                                    <input type="text" class="form-control radius input-form" placeholder="Categoria">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control radius input-form" placeholder="Rua"
+                                            name="roadPartner" id="roadPartner">
+                                    </div>
                                 </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control radius input-form" placeholder="Número"
+                                            name="numberPartner" id="numberPartner">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control radius input-form" placeholder="Cep"
+                                            name="cepPartner" id="cepPartner">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control radius input-form"
+                                            placeholder="Complemento" name="complementPartner" id="complementPartner">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control radius input-form" placeholder="Cidade"
+                                            name="cityPartner" id="cityPartner">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control radius input-form" placeholder="Estado"
+                                            name="statePartner" id="statePartner">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control radius input-form" placeholder="Bairro"
+                                            name="districtPartner" id="districtPartner">
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control radius input-form" placeholder="Rua">
-                                </div>
+                        <button type="submit" class="btn btn-dark btn-block radius mt-4">Enviar</button>
+                        <div class="row justify-content-center">
+                            <div class="col-4">
+                                <button type="button" class="btn button-home radius mt-4 ml-5">
+                                    < Home</button>
                             </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control radius input-form" placeholder="Número">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control radius input-form" placeholder="Cep">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control radius input-form" placeholder="Complemento">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control radius input-form" placeholder="Cidade">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control radius input-form" placeholder="Estado">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control radius input-form" placeholder="Bairro">
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <button type="button" class="btn btn-dark btn-block radius mt-4">Enviar</button>
-                    <div class="row justify-content-center">
-                        <div class="col-4">
-                            <button type="button" class="btn button-home radius mt-4 ml-5">< Home</button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </form>
         </div>
 
 
@@ -113,6 +140,7 @@
         </div>
     </footer>
 </body>
+<script src="js/validacoes.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>

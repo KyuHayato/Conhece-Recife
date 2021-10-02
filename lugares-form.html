@@ -27,78 +27,87 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class=" border border-dark p-4 radius" style="background: rgba(255, 247, 206, 0.33);">
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control radius input-form" placeholder="Nome">
+            <form method="POST" onsubmit="return validateForm(this);">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class=" border border-dark p-4 radius" style="background: rgba(255, 247, 206, 0.33);">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control radius input-form" placeholder="Nome"
+                                            name="namePlace" id="namePLace">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control radius input-form" placeholder="Bairro"
+                                            name="districtPlace" id="districtPlace">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control radius input-form" placeholder="Bairro">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control radius input-form" placeholder="Rua"
+                                            name="placeRoad" id="placeRoad">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control radius input-form" placeholder="Número"
+                                            name="numberPlace" id="numberPlace">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control radius input-form" placeholder="Cep"
+                                            name="cepPlace" id="cepPlace">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control radius input-form"
+                                            placeholder="Complemento" name="complementPlace" id="complementPlace">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control radius input-form" placeholder="Cidade"
+                                            name="cityPlace" id="cityPlace">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control radius input-form" placeholder="Estado"
+                                            name="statePlace" id="statePlace">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col">
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control radius input-form"
+                                            placeholder="Descrição" rows="10" name="descriptionPlace" id="descriptionPlace"></textarea>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control radius input-form" placeholder="Rua">
-                                </div>
+                        <button type="submit" class="btn btn-dark btn-block radius mt-4">Enviar</button>
+                        <div class="row justify-content-center">
+                            <div class="col-4">
+                                <button type="button" class="btn button-home radius mt-4 ml-5">
+                                    < Home</button>
                             </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control radius input-form" placeholder="Número">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control radius input-form" placeholder="Cep">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control radius input-form" placeholder="Complemento">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control radius input-form" placeholder="Cidade">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control radius input-form" placeholder="Estado">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            
-                            <div class="col">
-                                <div class="form-group">
-                                    <textarea type="text" class="form-control radius input-form" placeholder="Descrição" rows="10"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" class="btn btn-dark btn-block radius mt-4">Enviar</button>
-                    <div class="row justify-content-center">
-                        <div class="col-4">
-                            <button type="button" class="btn button-home radius mt-4 ml-5">< Home</button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
-        </div>
-
-
     </section>
     <footer>
         <div class="row justify-content-end">
@@ -110,6 +119,7 @@
         </div>
     </footer>
 </body>
+<script src="js/validacoes.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
