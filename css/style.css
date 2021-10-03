@@ -52,8 +52,7 @@
     font-size: 16px;
     line-height: 15px;
     text-align: justify;
-    letter-spacing: -0.015em;
-    text-transform: capitalize;
+    letter-spacing: -0.015em;;
 }
 
 #inverter {
@@ -84,4 +83,28 @@
     padding-bottom: 0.75rem;
     padding-right: 2rem;
     padding-left: 2rem;
+}
+.button-lugar{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    justify-content: center;
+    width: 255px;
+    height: 47px;
+    background: linear-gradient(180deg, rgba(255, 247, 206, 0.33) 0%, rgba(178, 221, 237, 0.33) 100%);
+    border: 2px solid LightBlue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+}
+.button-parceiro{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    justify-content: center;
+    width: 255px;
+    height: 47px;
+    background: linear-gradient(180deg, rgba(255, 247, 206, 0.33) 0%, rgba(178, 221, 237, 0.33) 100%);
+    border: 2px solid LightBlue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
 }
