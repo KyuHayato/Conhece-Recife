@@ -1,6 +1,6 @@
 
 .style-img {
-    width: 162px;
+    width: 190px;
     height: 170px;
 }
 
@@ -9,11 +9,12 @@
     border-top-right-radius: 20px !important;
     border-bottom-left-radius: 20px !important;
     border-bottom-right-radius: 20px !important;
+    
 }
 
 .button-dropdown {
     border: solid 2px #343a40 !important;
-    background: #343a40 !important;
+    background: #0a0a0a !important;
     color: white !important;
 }
 
