@@ -1,16 +1,16 @@
 
 function validateForm(form) {
-    //Verifica se o campo nome foi preenchido e
-    //contém no mínimo três caracteres.
-    // if (form.nome.value == "" || form.nome.value == null || form.nome.value.lenght < 3) {
-    //     //É mostrado um alerta, caso o campo esteja vazio.
-    //     alert("Por favor, indique o seu nome.");
-    //     //Foi definido um focus no campo.
-    //     form.nome.focus();
-    //     //o form não é enviado.
-    //     return false;
-    // }
-    // //o campo e-mail precisa de conter: "@", "." e não pode estar vazio
+    // Verifica se o campo nome foi preenchido e
+    // contém no mínimo três caracteres.
+    if (form.namePlace.value == "" || form.namePlace.value == null || form.namePlace.value.lenght < 3) {
+        //É mostrado um alerta, caso o campo esteja vazio.
+        alert("Por favor, indique o seu nome.");
+        //Foi definido um focus no campo.
+        form.namePlace.focus();
+        //o form não é enviado.
+        return false;
+    }
+    //o campo e-mail precisa de conter: "@", "." e não pode estar vazio
     // if (form.email.value.indexOf("@") == -1 ||
     //     form.email.valueOf.indexOf(".") == -1 ||
     //     form.email.value == "" ||
@@ -61,6 +61,6 @@ function validateForm(form) {
     //     form.sobre.focus();
     //     return false;
     // }
-    alert("teste")
+    // alert("teste")
 }
 
