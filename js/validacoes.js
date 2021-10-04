@@ -2,23 +2,34 @@
 function validateForm(form) {
     // Verifica se o campo nome foi preenchido e
     // contém no mínimo três caracteres.
-    if (form.namePlace.value == "" || form.namePlace.value == null || form.namePlace.value.lenght < 3) {
+    if (form.namePlace.value == "" || form.namePlace.value == null || form.namePlace.value.length < 3) {
         //É mostrado um alerta, caso o campo esteja vazio.
-        alert("Por favor, indique o seu nome.");
+        //let spanError = document.createElement('span');
+        //spanError.innerHTML = `Nome invalido`
+        //spanError.style = 'color:red;font-size: 15px;'; 
+        //document.querySelector('.error').appendChild(spanError)
+       
+        document.querySelector('.error').style = 'block'
+        //alert("Por favor, indique o seu nome.");
+
         //Foi definido um focus no campo.
         form.namePlace.focus();
         //o form não é enviado.
         return false;
+    } else {
+        document.querySelector('.error').style = 'none'
+       
     }
     //o campo e-mail precisa de conter: "@", "." e não pode estar vazio
-    // if (form.email.value.indexOf("@") == -1 ||
-    //     form.email.valueOf.indexOf(".") == -1 ||
-    //     form.email.value == "" ||
-    //     form.email.value == null) {
-    //     alert("Por favor, indique um e-mail válido.");
-    //     form.email.focus();
-    //     return false;
-    // }
+    if (form.districtPlace.value == "" || form.districtPlace.value == null
+        || form.districtPlace.value.length < 3) {
+            document.querySelector('.errorPlace').style = 'block'
+        //alert("Por favor, indique um e-mail válido.");
+        form.districtPlace.focus();
+        return false;
+    } else{
+        document.querySelector('.errorPlace').style = 'none'
+    }
     // // O utilizador necessita de selecionar um dos dois
     // //radio buttons: Masculino ou Feminino.
     // escolhaSexo = -1; //valor negativo default (padrão) que significa que nada foi escolhido ainda.
@@ -61,6 +72,6 @@ function validateForm(form) {
     //     form.sobre.focus();
     //     return false;
     // }
-    // alert("teste")
+
 }
 
