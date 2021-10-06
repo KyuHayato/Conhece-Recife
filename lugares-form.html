@@ -33,7 +33,7 @@
                 <img src=images/bolas-design.png
                 style="position: absolute;width: 133.5px;height: 135px;top: 390px;right:330px;left:0,8px;">
             </div>
-            <form method="POST" onsubmit="return validateForm(this);">
+            <form method="POST" action="" name="formRegister" id="formRegister">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class=" border border-dark p-4 radius" style="background: rgba(255, 247, 206, 0.33);">
@@ -41,7 +41,7 @@
                                 <div class="col">
                                     <div class="form-group">
                                         <input type="text" class="form-control radius input-form" placeholder="Nome"
-                                            name="namePlace" id="namePlace">
+                                            name="namePlace" id="namePlace" onchange="validateNamePlace(this)">
                                         <div>
                                             <span class="style-error" id="errorNamePlace" style="display: none;">Nome
                                                 invalido, insira os dados de forma correta</span>
@@ -66,7 +66,7 @@
                                         <input type="text" class="form-control radius input-form" placeholder="Rua"
                                             name="placeRoad" id="placeRoad">
                                         <div>
-                                            <span class="style-error" id="errorDistrictPlace"
+                                            <span class="style-error" id="errorPlaceRoad"
                                                 style="display: none;">Bairro invalido, insira os dados de forma
                                                 correta</span>
                                         </div>
@@ -90,7 +90,7 @@
                                         <input type="text" class="form-control radius input-form" placeholder="Cep"
                                             name="cepPlace" id="cepPlace">
                                         <div>
-                                            <span class="style-error" id="errorDistrictPlace"
+                                            <span class="style-error" id="errorCepPlace"
                                                 style="display: none;">Bairro invalido, insira os dados de forma
                                                 correta</span>
                                         </div>
@@ -133,7 +133,6 @@
                                 </div>
                             </div>
                             <div class="row">
-
                                 <div class="col">
                                     <div class="form-group">
                                         <textarea type="text" class="form-control radius input-form"
@@ -148,7 +147,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-dark btn-block radius mt-4">Enviar</button>
+                        <button type="button" class="btn btn-dark btn-block radius mt-4" onclick="validateFormRegister(this)">Enviar</button>
                         <div class="row justify-content-center">
                             <div class="col-4">
                                 <button type="button" class="btn button-home radius mt-4 ml-5">
@@ -183,5 +182,21 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+<script>
+    function validarForm(){
+        limparMensagem();
+        let nome = document.querySelector('#namePlace').value;
+        if(nome == ''){
+            document.querySelector('#errorNamePlace').style.display = 'block';
+         
+            return;
+        }
+       //
+        
 
+    }
+    function limparMensagem(){
+        document.querySelector('#errorNamePlace').style.display = 'none';
+    }
+</script>
 </html>
