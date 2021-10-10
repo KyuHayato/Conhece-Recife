@@ -135,3 +135,12 @@
     color:red;
     font-size: 15px;
 }
+
+table th{
+    font-size: 20px;
+    text-align: center;
+}
+
+table td{
+    text-align: center;
+}
