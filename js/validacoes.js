@@ -134,7 +134,7 @@ function validateFormRegisterPartner() {
     } else {
         document.querySelector("#errorStatePartner").style.display = "none"
     }
-    if (!document.querySelector('#categoryPartner').ariaSelected) {
+    if (document.querySelector('#categoryPartner').selectedIndex == 0) {
         document.querySelector("#errorCategoryPartner").style.display = "block"
     } else {
         document.querySelector("#errorCategoryPartner").style.display = "none"
@@ -146,19 +146,61 @@ function validateLogin() {
         nome: ['Kyu', 'Ana', 'Edu'],
         senha: 'KyuHayato'
     }
-    for(let i = 0; i < database.nome.length - 1; i++){
+    for (let i = 0; i < database.nome.length - 1; i++) {
         if (document.querySelector('#nameLogin').value != database.nome[i]) {
             document.querySelector("#errorNameLogin").style.display = "block"
         } else {
             document.querySelector("#errorNameLogin").style.display = "none"
-        } 
+        }
     }
 
-    if(document.querySelector('#Password').value != database.senha){
+    if (document.querySelector('#Password').value != database.senha) {
         document.querySelector("#errorPassword").style.display = "block"
     } else {
         document.querySelector("#errorPassword").style.display = "none"
-    } 
+    }
+}
+function validateFormRegisterContact() {
+    if (document.querySelector("#nameContact").value == "" ||
+        document.querySelector("#nameContact").value.length < 3) {
+
+        document.querySelector('#errorNameContact').style.display = 'block';
+    } else {
+        document.querySelector('#errorNameContact').style.display = 'none';
+    }
+
+    if (document.querySelector("#phoneContact").value == "" ||
+        document.querySelector("#phoneContact").value.length > 11 ||
+        document.querySelector("#phoneContact").value.length < 11 ||
+        typeof (document.querySelector("#phoneContact").value) != Number) {
+
+        document.querySelector("#errorPhoneContact").style.display = "block"
+
+    } else {
+        document.querySelector("#errorPhoneContact").style.display = "none"
+    }
+
+    if (document.querySelector('#subjectContact').selectedIndex == 0) {
+        document.querySelector("#errorSubjectContact").style.display = "block"
+    } else {
+        document.querySelector("#errorSubjectContact").style.display = "none"
+    }
+
+    if (document.querySelector("#emailContact").value == "") {
+
+        document.querySelector("#errorEmailContact").style.display = "block"
+    }
+    else {
+        document.querySelector("#errorEmailContact").style.display = "none"
+    }
+
+    if (document.querySelector("#messageContact").value == "" ||
+        document.querySelector("#messageContact").value.length < 50) {
+        document.querySelector("#errorMessageContact").style.display = "block"
+    } else {
+        document.querySelector("#errorMessageContact").style.display = "none"
+    }
+    console.log(document.querySelector('#subjectContact').selectedIndex)
 }
 // function validateNamePartner(namePartner) {
 
