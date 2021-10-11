@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,12 +45,12 @@
                     </div>
                     <div class="col-sm-9 ">
                         <p style="font-size: 21px; font-family: Roboto;text-align: justify;line-height: 120%;">
-                            Ao perceber que sÃ³ visitamos lugares que conhecemos, daÃ­ nasceu o projeto Conhece Recife.
-                            O objetivo Ã© levar a nossa cidade a alcanÃ§ar uma maior visibilidade entre turistas e entre
+                            Ao perceber que só visitamos lugares que conhecemos, daí nasceu o projeto Conhece Recife.
+                            O objetivo é levar a nossa cidade a alcançar uma maior visibilidade entre turistas e entre
                             moradores locais,
-                            tendo em vista que os prÃ³prios recifenses nÃ£o conhecem as suas histÃ³rias, pretendemos fazer
-                            com que a nossa populaÃ§Ã£o conheÃ§a mais a sua cidade
-                            e que os turistas tenham nossa cidade como referÃªncia. O projeto conta com o apoio de
+                            tendo em vista que os próprios recifenses não conhecem as suas histórias, pretendemos fazer
+                            com que a nossa população conheça mais a sua cidade
+                            e que os turistas tenham nossa cidade como referência. O projeto conta com o apoio de
                             empreendedores locais.
                             Mergulhem no Conhece Recife!!!
                         </p>
@@ -79,8 +81,8 @@
                                             style="font-size: 13px;letter-spacing: -0.015em;text-align:initial;line-height: 15px;margin-top: 4px;">
                                             A legendagem descritiva indica para os deficientes auditivos
                                             sons e
-                                            ruÃ­dos que ajudam na
-                                            compreensÃ£o da narrativa
+                                            ruídos que ajudam na
+                                            compreensão da narrativa
                                         </p>
                                     </div>
                                 </div>
@@ -100,7 +102,7 @@
                                     <div class="col option-accessibility-text ">
                                         <p style="font-size: 13px;">
                                             <br><br>
-                                            PrÃ¡tica de atividade fÃ­sica
+                                            Prática de atividade física
                                             <br><br><br>
                                         </p>
                                     </div>
@@ -123,7 +125,7 @@
                                         <br><br>
                                         <p
                                             style="font-size: 13px;letter-spacing: -0.015em;text-align:initial;line-height: 15px;margin-top: 4px;">
-                                            Lugar acessÃ­vel para deficiente locomotor </p>
+                                            Lugar acessível para deficiente locomotor </p>
                                         <br>
                                     </div>
                                 </div>
@@ -139,7 +141,7 @@
                                     <div class="col option-accessibility-text">
                                         <p style="font-size: 13px;">
                                             <br><br>
-                                            OpÃ§Ã£o para o pÃºblico Infantil
+                                            Opção para o público Infantil
                                             <br><br>
                                         </p>
                                     </div>
@@ -162,7 +164,7 @@
                                         <p
                                             style="font-size: 13px;letter-spacing: -0.015em;text-align:initial;line-height: 15px;margin-top: 4px;">
                                             <br>
-                                            NarraÃ§Ã£o descritiva em voz de sons e elementos visuais-chave
+                                            Narração descritiva em voz de sons e elementos visuais-chave
                                             <br><br>
                                         </p>
                                     </div>
@@ -180,7 +182,7 @@
                                     <div class="col option-accessibility-text">
                                         <p style="font-size: 13px;">
                                             <br><br>
-                                            OpÃ§Ã£o em Libras
+                                            Opção em Libras
                                             <br><br>
                                         </p>
                                     </div>

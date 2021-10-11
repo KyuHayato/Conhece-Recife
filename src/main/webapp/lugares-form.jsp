@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -24,14 +26,14 @@
             <div class="row mt-5">
                 <div class="col-lg-12">
                     <div class="mb-4">
-                        <h1 class="label-disabled" style="font-family: Fjalla One; font-size: 75px;">LUGARES</h1>
-                        <h1 class="text-center" style="font-family: Fjalla One; font-size: 50px;">LUGARES</h1>
+                        <h1 class="text-center label-disabled" style="font-family: Fjalla One;">LUGARES</h1>
+                        <h1 class="text-center" style="font-family: Fjalla One;">LUGARES</h1>
                     </div>
                 </div>
             </div>
             <div>
                 <img src=images/bolas-design.png
-                style="position: absolute;width: 133.5px;height: 135px;top: 390px;right:95px;left:0,8px;">
+                style="position: absolute;width: 133.5px;height: 135px;top: 390px;right:330px;left:0,8px;">
             </div>
             <form method="POST" name="formRegisterPlace" id="formRegisterPlace">
                 <div class="row justify-content-center">
@@ -74,11 +76,11 @@
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" class="form-control radius input-form" placeholder="NÃºmero"
+                                        <input type="text" class="form-control radius input-form" placeholder="Número"
                                             name="numberPlace" id="numberPlace">
                                         <div>
                                             <span class="style-error" id="errorNumberPlace"
-                                                style="display: none;">NÃºmero invalido, insira os dados de forma
+                                                style="display: none;">Número invalido, insira os dados de forma
                                                 correta</span>
                                         </div>
                                     </div>
@@ -136,11 +138,11 @@
                                 <div class="col">
                                     <div class="form-group">
                                         <textarea type="text" class="form-control radius input-form"
-                                            placeholder="DescriÃ§Ã£o" rows="10" name="descriptionPlace"
+                                            placeholder="Descrição" rows="10" name="descriptionPlace"
                                             id="descriptionPlace"></textarea>
                                             <div>
                                                 <span class="style-error" id="errorDescriptionPlace"
-                                                    style="display: none;">DescriÃ§Ã£o invalida, insira os dados de forma
+                                                    style="display: none;">Descrição invalida, insira os dados de forma
                                                     correta</span>
                                             </div>
                                     </div>
@@ -182,21 +184,5 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-<script>
-    function validarForm(){
-        limparMensagem();
-        let nome = document.querySelector('#namePlace').value;
-        if(nome == ''){
-            document.querySelector('#errorNamePlace').style.display = 'block';
-         
-            return;
-        }
-       //
-        
 
-    }
-    function limparMensagem(){
-        document.querySelector('#errorNamePlace').style.display = 'none';
-    }
-</script>
 </html>

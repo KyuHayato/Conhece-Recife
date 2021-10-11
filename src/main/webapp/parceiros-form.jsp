@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -24,7 +26,7 @@
     </header>
     <section>
 
-        <!-- Colocar dentro de um form que tenha um metodo POST para enviar a requisiÃ§Ã£o  -->
+        <!-- Colocar dentro de um form que tenha um metodo POST para enviar a requisição  -->
         <div class="container">
             <div class="row mt-5">
                 <div class="col-lg-12">
@@ -82,7 +84,7 @@
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" class="form-control radius input-form" placeholder="NÃºmero"
+                                        <input type="text" class="form-control radius input-form" placeholder="Número"
                                             name="numberPartner" id="numberPartner">
                                         <div>
                                             <span class="style-error" id="errorNumberPartner"

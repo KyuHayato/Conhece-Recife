@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -106,23 +108,23 @@
                 <div class="col mr-3">
                     <h1 style="font-size: 61px; font-weight: bold;">Recife</h1>
                     <p id="text-home">
-                        √â um munic√≠pio brasileiro, capital do estado de Pernambuco, localizado na Regi√£o Nordeste do
-                        pa√≠s. Com
-                        √°rea
-                        territorial de aproximadamente 218 km¬≤, √© formado por uma plan√≠cie aluvial, ilhas, pen√≠nsulas e
+                        … um municÌpio brasileiro, capital do estado de Pernambuco, localizado na Regi„o Nordeste do
+                        paÌs. Com
+                        ·rea
+                        territorial de aproximadamente 218 km≤, È formado por uma planÌcie aluvial, ilhas, penÌnsulas e
                         manguezais
-                        como suas principais caracter√≠sticas geogr√°ficas. √â a cidade nordestina com o melhor √çndice de
-                        Desenvolvimento Humano (IDH-M), o Recife √© a quarta capital brasileira na hierarquia da gest√£o
+                        como suas principais caracterÌsticas geogr·ficas. … a cidade nordestina com o melhor Õndice de
+                        Desenvolvimento Humano (IDH-M), o Recife È a quarta capital brasileira na hierarquia da gest„o
                         federal,
-                        ap√≥s
-                        Bras√≠lia, Rio de Janeiro e S√£o Paulo, e possui o quarto aglomerado urbano mais populoso do
+                        apÛs
+                        BrasÌlia, Rio de Janeiro e S„o Paulo, e possui o quarto aglomerado urbano mais populoso do
                         Brasil, com 4
-                        milh√µes de habitantes em 2017, superado apenas pelas concentra√ß√µes urbanas de S√£o Paulo, Rio de
+                        milhıes de habitantes em 2017, superado apenas pelas concentraÁıes urbanas de S„o Paulo, Rio de
                         Janeiro
                         e
-                        Belo Horizonte. A capital pernambucana tem, num raio de 300 km, tr√™s capitais estaduais sob sua
-                        influ√™ncia
-                        direta: Jo√£o Pessoa (122 km), Macei√≥ (257 km) e Natal (286 km).
+                        Belo Horizonte. A capital pernambucana tem, num raio de 300 km, trÍs capitais estaduais sob sua
+                        influÍncia
+                        direta: Jo„o Pessoa (122 km), MaceiÛ (257 km) e Natal (286 km).
                     </p>
                 </div>
                 <div class="col radius" style="background: #ffff80;

@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +15,7 @@
 </head>
 
 <body>
-    <!--RETANGULOS DA TELA DE HOME, ADICIONAR NA TELA DE HOME TAMBÃ‰M-->
+    <!--RETANGULOS DA TELA DE HOME, ADICIONAR NA TELA DE HOME TAMBÉM-->
     <header>
     <header>
         <!--RETANGULOS DA TELA DE HOME, ADICIONAR NA TELA DE HOME-->
