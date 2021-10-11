@@ -9,18 +9,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Conhece Recife - Login[Administrador]</title>
 </head>
 
 <body>
     <header>
         <div>
-            <img src="../images/rectangle_54.png" alt="retangulo2"
+            <img src="images/rectangle_54.png" alt="retangulo2"
                 style="position: absolute; width: 1035.33px;top: -26.21px;">
-            <img src="../images/rectangle_55.png" alt="retangulo2"
+            <img src="images/rectangle_55.png" alt="retangulo2"
                 style="position: relative;width: 670.42px;left:751,73px;height: 266px;top: -13px;">
-            <img src="../images/Conhece Recife Logo.png" alt="logo"
+            <img src="images/Conhece Recife Logo.png" alt="logo"
                 style="position: absolute;width: 162px;height: 170px;left: 170px;top: 14px;">
         </div>
     </header>
@@ -33,10 +33,10 @@
                 </div>
             </div>
             <div>
-                <img src=../images/bolas-design.png
+                <img src=images/bolas-design.png
                 style="position: absolute;width: 133.5px;height: 135px;top: 267px;right:140px;left:0,8px;">
             </div>
-            <form method="POST" onsubmit="return validateForm(this);">
+            <form method="POST">
                 <div class="row justify-content-center">
                     <div class="col-lg-4">
                         <div class=" border border-dark p-4 radius" style="background: rgba(255, 247, 206, 0.33);">
@@ -75,7 +75,7 @@
                         <div class="row justify-content-center">
                             <div class="col-4">
                                 <button type="button" class="btn button-home radius mt-4">
-                                    <a href="index.jsp" style="color: black; text-decoration: none;">Home</a></button>
+                                    <a href="index.jsp" style="color: black; text-decoration: none;"> < Home</a></button>
                             </div>
                         </div>
                     </div>
@@ -87,8 +87,8 @@
         <div class="row justify-content-end">
             <div class="col-6">
                 <figure class="ml-5">
-                    <img src="../images/rectangle_56.png" alt="retangulo2" style="position: absolute;top:170px;left:80px;">
-                    <img src="../images/rectangle_57.png" alt="retangulo2"
+                    <img src="images/rectangle_56.png" alt="retangulo2" style="position: absolute;top:170px;left:80px;">
+                    <img src="images/rectangle_57.png" alt="retangulo2"
                         style="position: relative;top:205px;left:270px;">
                 </figure>
             </div>
