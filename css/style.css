@@ -55,6 +55,26 @@
     text-align: justify;
     letter-spacing: -0.015em;;
 }
+#texto_quemsomos_blocos{
+    position: absolute;
+    width: 230px;
+    height: 60px;
+    left: 256px;
+    top: 537px;
+    
+    font-family: Archivo VF Beta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    text-transform: capitalize;
+    
+    color: #000000;
+    
+}
 
 #inverter {
     transform: rotate(180deg);
@@ -86,6 +106,7 @@
     padding-bottom: 0.75rem;
     padding-right: 2rem;
     padding-left: 2rem;
+    background: rgba(178, 221, 237, 0.24);;
 }
 .button-lugar{
     text-align: center;
@@ -110,4 +131,17 @@
     border: 2px solid LightBlue;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 60px;
+}
+.style-error{
+    color:red;
+    font-size: 15px;
+}
+
+table th{
+    font-size: 20px;
+    text-align: center;
+}
+
+table td{
+    text-align: center;
 }
