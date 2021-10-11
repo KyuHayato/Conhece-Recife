@@ -108,7 +108,7 @@
                         <div class="row justify-content-center">
                             <div class="col-4">
                                 <button type="button" class="btn button-home radius mt-4">
-                                    <a href="index.html" style="color: black; text-decoration: none;">
+                                    <a href="index.jsp" style="color: black; text-decoration: none;">
                                         < Home</a></button>
                             </div>
                         </div>
