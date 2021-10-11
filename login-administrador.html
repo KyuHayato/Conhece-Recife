@@ -32,9 +32,9 @@
             </div>
             <div>
                 <img src=images/bolas-design.png
-                style="position: absolute;width: 133.5px;height: 135px;top: 277px;right:330px;left:0,8px;">
+                    style="position: absolute;width: 133.5px;height: 135px;top: 277px;right:330px;left:0,8px;">
             </div>
-            <form method="POST" onsubmit="return validateForm(this);">
+            <form method="POST">
                 <div class="row justify-content-center">
                     <div class="col-lg-4">
                         <div class=" border border-dark p-4 radius" style="background: rgba(255, 247, 206, 0.33);">
@@ -42,29 +42,37 @@
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <input type="text" class="form-control radius input-form" placeholder="Login"
-                                            name="nameLogin" id="nameLogin" style="text-decoration: none; color: #495057; background: linear-gradient(180deg, rgba(255, 247, 206, 0.33) 0%, rgba(178, 221, 237, 0.33) 100%);">
-                                    </div>
+                                            name="nameLogin" id="nameLogin"
+                                            style="text-decoration: none; color: #495057; background: linear-gradient(180deg, rgba(255, 247, 206, 0.33) 0%, rgba(178, 221, 237, 0.33) 100%);">
+                                            <div>
+                                                <span class="style-error" id="errorNameLogin" style="display: none;">Nome do ADM incorreto</span>
+                                            </div>
+                                        </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control radius input-form" placeholder="Senha"
-                                        name="Password" id="Password" style="text-decoration: none; color: #495057; background: linear-gradient(180deg, rgba(255, 247, 206, 0.33) 0%, rgba(178, 221, 237, 0.33) 100%);">
-                                    </div>
+                                        <input type="password" class="form-control radius input-form"
+                                            placeholder="Senha" name="Password" id="Password"
+                                            style="text-decoration: none; color: #495057; background: linear-gradient(180deg, rgba(255, 247, 206, 0.33) 0%, rgba(178, 221, 237, 0.33) 100%);">
+                                            <div>
+                                                <span class="style-error" id="errorPassword" style="display: none;">Senha incorreta</span>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-dark btn-block radius mt-4">Enviar</button>
+                        <button type="button" class="btn btn-dark btn-block radius mt-4" onclick="validateLogin(this)">Enviar</button>
                         <div class="row justify-content-center">
                             <div class="col-4">
                                 <button type="button" class="btn button-home radius mt-4">
                                     <a href="index.html" style="color: black; text-decoration: none;">
-                                    < Home</a></button>
+                                        < Home</a></button>
                             </div>
                         </div>
-                </div>
+                    </div>
             </form>
         </div>
-    </div>
+        </div>
     </section>
     <footer>
         <div class="row justify-content-end">
@@ -79,6 +87,7 @@
     </footer>
 
 </body>
+<script src="js/validacoes.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>

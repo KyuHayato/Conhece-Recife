@@ -33,7 +33,7 @@
                 <img src=images/bolas-design.png
                 style="position: absolute;width: 133.5px;height: 135px;top: 390px;right:330px;left:0,8px;">
             </div>
-            <form method="POST" action="" name="formRegister" id="formRegister">
+            <form method="POST" name="formRegisterPlace" id="formRegisterPlace">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class=" border border-dark p-4 radius" style="background: rgba(255, 247, 206, 0.33);">
@@ -51,7 +51,7 @@
                                 <div class="col-6">
                                     <div class="form-group">
                                         <input type="text" class="form-control radius input-form" placeholder="Bairro"
-                                            name="districtPlace" id="districtPlace">
+                                            name="districtPlace" id="districtPlace" onchange="validadeDistrictPlace(this)">
                                         <div>
                                             <span class="style-error" id="errorDistrictPlace"
                                                 style="display: none;">Bairro invalido, insira os dados de forma
@@ -91,7 +91,7 @@
                                             name="cepPlace" id="cepPlace">
                                         <div>
                                             <span class="style-error" id="errorCepPlace"
-                                                style="display: none;">Bairro invalido, insira os dados de forma
+                                                style="display: none;">CEP invalido, insira os dados de forma
                                                 correta</span>
                                         </div>
                                     </div>
@@ -147,7 +147,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-dark btn-block radius mt-4" onclick="validateFormRegister(this)">Enviar</button>
+                        <button type="button" class="btn btn-dark btn-block radius mt-4" onclick="validateFormRegisterPlace(this)">Enviar</button>
                         <div class="row justify-content-center">
                             <div class="col-4">
                                 <button type="button" class="btn button-home radius mt-4 ml-5">
