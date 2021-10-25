@@ -47,7 +47,7 @@ Entradas e Pré-condições:Não tem.
 Saídas e Pós-Condições: Exclui os dados de um parceiro
 
 ### *Excluir Pontos Turísticos*
-Permite excluir os pontos turísticos já cadastrados 
+Permite excluir os pontos turísticos já cadastrados
 Prioridade: Essencial.
 Entradas e Pré-condições:Não tem.
 Saídas e Pós-Condições: Exclui os pontos turísticos. 
@@ -138,5 +138,12 @@ Funcão de listar, alterar e excluir lugares
 
 <p align="center">
 <img src="./src/main/webapp/images/pagina lugares listar.png" width="80%" height="50%"/>
+</p>
+
+### **Listagem de Parceiros**
+Funcão de listar, alterar e excluir parceiros
+
+<p align="center">
+<img src="./src/main/webapp/images/pagina listar parceiros.png" width="80%" height="50%"/>
 </p>
 
