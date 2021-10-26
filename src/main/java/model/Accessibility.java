@@ -7,6 +7,7 @@ public class Accessibility {
 	}
 	private Integer id;
 	private String type;
+	
 	public Integer getId() {
 		return id;
 	}
