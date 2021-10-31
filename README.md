@@ -13,44 +13,44 @@ O sistema visa não só atrair pessoas para lugares de referência na Região Me
 ## Alternativas para o sistema proposto
 O sistema proposto terá como objetivo mostrar locais em Recife onde o usuário poderá saber se possui acessibilidade no local, visitá-lo, conhecer sua história e obter descontos em comércios ao redor. Tudo de maneira simples e rápida.
 ### Alternativa I
-	O sistema estará disponível na internet, onde poderá ser acessado de qualquer browser e o site deverá obedecer aos conceitos de responsividade, haja vista que o sistema deve oferecer praticidade para os usuários.
+O sistema estará disponível na internet, onde poderá ser acessado de qualquer browser e o site deverá obedecer aos conceitos de responsividade, haja vista que o sistema deve oferecer praticidade para os usuários.
 ### Alternativa II
-	O sistema deve ser entregue em forma de aplicativo Mobile, visando praticidade e de forma que ocupe pouco espaço de armazenamento no dispositivo do usuário.
+O sistema deve ser entregue em forma de aplicativo Mobile, visando praticidade e de forma que ocupe pouco espaço de armazenamento no dispositivo do usuário.
 
 ## Requisitos funcionais 
 
 ### *Cadastrar Parceiros*
 Permitindo que o parceiro cadastre-se e informe os dados do seu estabelecimeto e quais os descontos que serão oferecidos. 
-Prioridade: Essencial.
-Entradas e Pré-condições:Não tem.
-Saídas e Pós-Condições: Um parceiro é cadastrado no sistema.
+- Prioridade: Essencial.
+- Entradas e Pré-condições:Não tem.
+- Saídas e Pós-Condições: Um parceiro é cadastrado no sistema.
 ### *Cadastrar Pontos Turísticos*
 Permitindo que o  cadastro dos pontos turísticos
-Prioridade: Essencial.
-Entradas e Pré-condições:Não tem.
-Saídas e Pós-Condições: Um ponto turístico é cadastrado no sistema.
+- Prioridade: Essencial.
+- Entradas e Pré-condições:Não tem.
+- Saídas e Pós-Condições: Um ponto turístico é cadastrado no sistema.
 ### *Atualizar Pontos Turísticos*
 Permite alterar os dados dos pontos turísticos já cadastrados 
-Prioridade: Essencial.
-Entradas e Pré-condições:Não tem.
-Saídas e Pós-Condições: Atualiza um ponto turístico
+- Prioridade: Essencial.
+- Entradas e Pré-condições:Não tem.
+- Saídas e Pós-Condições: Atualiza um ponto turístico
 ### *Atualizar um Parceiro*
 Permite alterar os dados dos parceiros já cadastrados 
-Prioridade: Essencial.
-Entradas e Pré-condições:Não tem.
-Saídas e Pós-Condições: Atualiza  os dados de um parceiro
+- Prioridade: Essencial.
+- Entradas e Pré-condições:Não tem.
+- Saídas e Pós-Condições: Atualiza  os dados de um parceiro
 
 ### *Excluir um Parceiro*
 Permite excluir os dados dos parceiros já cadastrados 
-Prioridade: Essencial.
-Entradas e Pré-condições:Não tem.
-Saídas e Pós-Condições: Exclui os dados de um parceiro
+- Prioridade: Essencial.
+- Entradas e Pré-condições:Não tem.
+- Saídas e Pós-Condições: Exclui os dados de um parceiro
 
 ### *Excluir Pontos Turísticos*
 Permite excluir os pontos turísticos já cadastrados
-Prioridade: Essencial.
-Entradas e Pré-condições:Não tem.
-Saídas e Pós-Condições: Exclui os pontos turísticos. 
+- Prioridade: Essencial.
+- Entradas e Pré-condições:Não tem.
+- Saídas e Pós-Condições: Exclui os pontos turísticos. 
 
 
 ## Requisitos não funcionais
@@ -147,3 +147,27 @@ Funcão de listar, alterar e excluir parceiros
 <img src="./src/main/webapp/images/pagina listar parceiros.png" width="80%" height="50%"/>
 </p>
 
+### **Cadastro de Lugares**
+Cadastro de Lugares
+
+<p align="center">
+<img src="./src/main/webapp/images/pagina lugares cadastro.png" width="80%" height="50%"/>
+</p>
+
+
+### **Cadastro de Parceiros**
+Funcão de cadastrar os parceiros.
+
+<p align="center">
+<img src="./src/main/webapp/images/pagina parceiros cadastro.png" width="80%" height="50%"/>
+</p>
+
+
+Equipe:
+- *Anderson Oliveira Amorim*
+- *Aline Pereira da Silva Vieira*
+- *Ana Inês Ferreira Alves* 
+- *Davi Guabiraba Tavares Santos* 
+- *Eduardo Barbosa da Silva*
+- *Ewerson Alves Correia*
+- *Jefferson de Castro Monteiro Silva*
