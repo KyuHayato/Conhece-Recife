@@ -145,3 +145,22 @@ table th{
 table td{
     text-align: center;
 }
+
+
+.spinner{
+	
+	height:36px;
+	width:36px;
+	background-color: #ffffff;
+	animation:flip is linear infinite;	
+}
+
+@keyframes flip{
+	50%{
+		transform:rotatex(180deg);
+		
+	}
+	100%{
+		transform:rotatex(180deg) rotatey(180deg);
+	}
+}

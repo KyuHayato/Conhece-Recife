@@ -17,6 +17,7 @@
 
 <body>
     <header>
+   
         <div>
             <img src="images/rectangle_54.png" alt="retangulo2"
                 style="position: absolute; width: 1035.33px;top: -26.21px;">
@@ -27,11 +28,14 @@
         </div>
     </header>
     <div class="container">
+     
         <div class="row" style="margin-top: 75px;">
             <div class="col-sm-6">
+            
                 <!-- faltando essa classe colocar no projeto -->
                 <article class="post_1" style="align-items: center;text-align: justify;">
                     <p>
+                   
                     <h4>Inaugurado no dia 6 de setembro de 1952 e situado às margens do Rio Capibaribe e na cabeceira da
                         mais moderna ponte da cidade à época, a Ponte Duarte Coelho, o São Luiz tornou-se um dos mais
                         emblemáticos cinemas do Recife, prezando por essa arte em sua concepção clássica, com exibição
