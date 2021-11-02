@@ -11,6 +11,7 @@ public class Cupom {
 	private String code;
 	private String name;
 	private Date expirationDate;
+	
 	public Integer getId() {
 		return id;
 	}
