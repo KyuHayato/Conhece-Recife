@@ -8,17 +8,14 @@ import java.sql.DriverManager;
 
 public class configBD {
 
-	public configBD() {
-		// TODO Auto-generated constructor stub
-		//configuracao Banco de Dados
-	}
+	public configBD() {}
 
-	private static String DRIVER_MYSQL = "com.mysql.cj.jdbc.Driver";//driver de conexao. Esta dentro driver mysql que foi baixado
+	private static String DRIVER_MYSQL = "com.mysql.cj.jdbc.Driver";
 	private static String LOCAL_SERVIDOR = "localhost";
-	private static String BANCO_DE_DADOS = "conhece_recife";//nome do banco de dados que sera consultado
+	private static String BANCO_DE_DADOS = "conhece_recife";
 	private static String PORTA_BANCO = "3306";
-	private static String USUARIO = "root";//usuario do banco em questao
-	private static String SENHA = "je83491694";//senha do banco em questao
+	private static String USUARIO = "root";
+	private static String SENHA = "";
 
 	public static void main(String[] args) {
 		try {

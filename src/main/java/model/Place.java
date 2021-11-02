@@ -10,11 +10,23 @@ public class Place{
 	private String city;
 	private String road;
 	private String complement;
-	private String cep;
+	private Integer cep;
 	private String district;
 	private String state;
-	private String number;
+	private Integer number;
 	
+	public Integer getCep() {
+		return cep;
+	}
+	public void setCep(Integer cep) {
+		this.cep = cep;
+	}
+	public Integer getNumber() {
+		return number;
+	}
+	public void setNumber(Integer number) {
+		this.number = number;
+	}
 	public String getName() {
 		return placeName;
 	}
@@ -45,12 +57,7 @@ public class Place{
 	public void setComplement(String complement) {
 		this.complement = complement;
 	}
-	public String getCep() {
-		return cep;
-	}
-	public void setCep(String cep) {
-		this.cep = cep;
-	}
+	
 	public String getDistrict() {
 		return district;
 	}
@@ -63,12 +70,7 @@ public class Place{
 	public void setState(String state) {
 		this.state = state;
 	}
-	public String getNumber() {
-		return number;
-	}
-	public void setNumber(String number) {
-		this.number = number;
-	}
+
 	public Integer getId() {
 		return id;
 	}

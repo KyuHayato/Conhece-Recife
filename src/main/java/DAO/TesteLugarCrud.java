@@ -1,7 +1,6 @@
 package DAO;
 
-import DAO.CRUD_lugar;
-import DAO.LugarDAO;
+import model.Place;
 
 public class TesteLugarCrud {
 
@@ -11,19 +10,19 @@ public class TesteLugarCrud {
 
 		try {
 			
-			LugarDAO lugar = new LugarDAO();
-			lugar.setNome("cinema sao luiz");
-			lugar.setDescricao("Diversao");
-			lugar.setCidade("Recife");
-			lugar.setRua("Boa Vista");
-			lugar.setComplemento("Avenida");
+			Place lugar = new Place();
+			lugar.setName("Teste a");
+			lugar.setDescription(" Aqu ");
+			lugar.setCity("Camaragibe");
+			lugar.setRoad("Boa Vista");
+			lugar.setComplement("Avenida Egg");
 			lugar.setCep(52074255);
-			lugar.setBairro("Boa Vista");
-			lugar.setEstado("Pernambuco");
-			lugar.setNumero(3333);
+			lugar.setDistrict("Boa Vista");
+			lugar.setState("Pernambuco");
+			lugar.setNumber(76767);
 			
-			CRUD_lugar dados1 = new CRUD_lugar();
-			dados1.cadastrarLugar(lugar);
+			PlaceDAO dados1 = new PlaceDAO();
+			dados1.addPlace(lugar);
 			
 			System.out.println("executado com sucesso");
 		}catch(Exception ex){
