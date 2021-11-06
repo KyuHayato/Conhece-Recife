@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import model.Place;
 import java.sql.DriverManager;
 
-public class PlaceDAO {
+public class CRUD_place {
 
 	private Connection conn;
 	private static String DRIVER_MYSQL = "com.mysql.cj.jdbc.Driver";
@@ -14,8 +14,15 @@ public class PlaceDAO {
 	private static String BANCO_DE_DADOS = "conhece_recife";
 	private static String PORTA_BANCO = "3306";
 	private static String USUARIO = "root";
-	private static String SENHA = "Rocklee767"; //Lembre sempre de colocar sua senha
+	private static String SENHA = "je83491694"; //Lembre sempre de colocar sua senha
 
+	//AQUI É ONDE RECEBE OS DADOS INSERIDOS DAS PAGINAS RESPONSAVEIS POR ELES, COMO TesteCupomCrud.java E OU processaNovoLugar.jsp , mandando os dados para o banco. 
+	
+	/*RESUMO: place é a classe de lugares
+		  processaNovoLugar.jsp e TesteCupomCrud.java , sao as classes que recebem os dados e enviam para o crud
+		  CRUD_place recebe os dados e envia para o banco	*/
+	
+	
 	
 	private void abrirConexao() {
 		try {
