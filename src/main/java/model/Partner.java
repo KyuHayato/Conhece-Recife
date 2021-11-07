@@ -10,11 +10,11 @@ public class Partner{
 	private String city;
 	private String road;
 	private String complement;
-	private String cep;
+	private Integer cep;
 	private String district;
 	private String state;
-	private String number;
-	private String phoneNumber;
+	private Integer number;
+	private Integer phoneNumber;
 	
 	public String getPartnerName() {
 		return partnerName;
@@ -46,10 +46,10 @@ public class Partner{
 	public void setComplement(String complement) {
 		this.complement = complement;
 	}
-	public String getCep() {
+	public Integer getCep() {
 		return cep;
 	}
-	public void setCep(String cep) {
+	public void setCep(Integer cep) {
 		this.cep = cep;
 	}
 	public String getDistrict() {
@@ -64,16 +64,16 @@ public class Partner{
 	public void setState(String state) {
 		this.state = state;
 	}
-	public String getNumber() {
+	public Integer getNumber() {
 		return number;
 	}
-	public void setNumber(String number) {
+	public void setNumber(Integer number) {
 		this.number = number;
 	}
-	public String getPhoneNumber() {
+	public Integer getPhoneNumber() {
 		return phoneNumber;
 	}
-	public void setPhoneNumber(String phoneNumber) {
+	public void setPhoneNumber(Integer phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 	public Integer getId() {

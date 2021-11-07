@@ -24,7 +24,7 @@
                 style="position: absolute;width: 162px;height: 170px;left: 170px;top: 14px;">
         </div>
     </header>
-    <section>
+  
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col--lg-12 mb-4">
@@ -68,7 +68,7 @@
                                 <div class="row justify-content-left">
                                     <div class="col-4">
                                         <button type="button" class="btn button-home radius pt-2" style="background-color: red; height:40px;">
-                                            <a href="" style="color: white; font-weight: strong; text-decoration: none;">Excluir</a></button>
+                                            <a href="#" style="color: white; font-weight: strong; text-decoration: none;">Excluir</a></button>
                                     </div>
                                 </div>
                             </td>
