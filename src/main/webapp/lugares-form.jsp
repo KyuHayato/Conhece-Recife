@@ -35,7 +35,7 @@
                 <img src=images/bolas-design.png
                 style="position: absolute;width: 133.5px;height: 135px;top: 390px;right:330px;left:0,8px;">
             </div>
-            <form method="POST" name="formRegisterPlace" id="formRegisterPlace">
+            <form method="POST" name="formRegisterPlace" id="formRegisterPlace" action="processaNovoLugar.jsp">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class=" border border-dark p-4 radius" style="background: rgba(255, 247, 206, 0.33);">
@@ -50,8 +50,9 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div class="col-6">
-                                    <div class="form-group">
+                                    <div class="form-group">                                  
                                         <input type="text" class="form-control radius input-form" placeholder="Bairro"
                                             name="districtPlace" id="districtPlace" onchange="validadeDistrictPlace(this)">
                                         <div>
