@@ -7,10 +7,12 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 
+import model.Cupom;
+
 import java.sql.DriverManager;
 
 
-public class CRUD_cupom {
+public class CupomDAO {
 	
 	private Connection conn;
 	private static String DRIVER_MYSQL = "com.mysql.cj.jdbc.Driver";//driver de conexao. Esta dentro driver mysql que foi baixado
@@ -44,7 +46,7 @@ private void FecharConexao() {
 		}
 	}
 
-public void cadastrarCupom(CupomDAO a) throws SQLException,Exception{
+public void addCupom(Cupom cupom) throws SQLException,Exception{
 	
 	//instrucao a ser executada, (insert)
 	String sql="INSERT INTO cupom (codigo, nome, data_de_validade)";
@@ -57,9 +59,9 @@ public void cadastrarCupom(CupomDAO a) throws SQLException,Exception{
 	
 	//passando os valores para os parametros
 
-	preparedStatement.setInt(1,a.getCodigo());
-	preparedStatement.setString(2,a.getNome());
-	preparedStatement.setDate(3,(java.sql.Date) a.getData_de_validade());
+	preparedStatement.setString(1,cupom.getCode());
+	preparedStatement.setString(2,cupom.getName());
+	preparedStatement.setDate(3,(java.sql.Date) cupom.getExpirationDate());
 	
 	//execute insert SQL stetement
 	preparedStatement.executeUpdate();
