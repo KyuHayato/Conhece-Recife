@@ -3,7 +3,7 @@
   
 <!DOCTYPE html>
 <%@page import="model.Place" %>
-<%@page import="main.webapp.processaNovoLugar.jsp" %>
+
 <%@page import="DAO.PlacesDAO" %>
 <html>
 
@@ -16,6 +16,7 @@
 
 <%
 try {
+	//aqui recebe os inputs do formulario lugares
 	String namePlace=request.getParameter("namePlace");
 	String districtPlace=request.getParameter("districtPlace");
 	String placeRoad=request.getParameter("placeRoad");
