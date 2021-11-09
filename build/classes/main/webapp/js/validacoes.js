@@ -1,206 +1,200 @@
 function validateFormRegisterPlace() {
 
-    if (document.querySelector("#namePlace").value == "" ||
-        document.querySelector("#namePlace").value.length < 3) {
+	if (document.querySelector("#namePlace").value == "" ||
+		document.querySelector("#namePlace").value.length < 3) {
 
-        document.querySelector('#errorNamePlace').style.display = 'block';
-    } else {
-        document.querySelector('#errorNamePlace').style.display = 'none';
-    }
+		document.querySelector('#errorNamePlace').style.display = 'block';
+	} else {
+		document.querySelector('#errorNamePlace').style.display = 'none';
+	}
 
-    if (document.querySelector("#districtPlace").value == "") {
+	if (document.querySelector("#districtPlace").value == "") {
 
-        document.querySelector("#errorDistrictPlace").style.display = "block"
-    }
-    else {
-        document.querySelector("#errorDistrictPlace").style.display = "none"
-    }
+		document.querySelector("#errorDistrictPlace").style.display = "block"
+	}
+	else {
+		document.querySelector("#errorDistrictPlace").style.display = "none"
+	}
 
-    if (document.querySelector("#placeRoad").value == "") {
+	if (document.querySelector("#placeRoad").value == "") {
 
-        document.querySelector("#errorPlaceRoad").style.display = "block"
-    } else {
-        document.querySelector("#errorPlaceRoad").style.display = "none"
-    }
+		document.querySelector("#errorPlaceRoad").style.display = "block"
+	} else {
+		document.querySelector("#errorPlaceRoad").style.display = "none"
+	}
 
-    if (document.querySelector("#numberPlace").value == "" ||
-        document.querySelector("#numberPlace").value.length > 11 ||
-        document.querySelector("#numberPlace").value.length < 11 ||
-        typeof (document.querySelector("#numberPlace").value) != Number) {
+	if (document.querySelector("#numberPlace").value == "") {
 
-        document.querySelector("#errorNumberPlace").style.display = "block"
+		document.querySelector("#errorNumberPlace").style.display = "block"
 
-    } else {
-        document.querySelector("#errorNumberPlace").style.display = "none"
-    }
+	} else {
+		document.querySelector("#errorNumberPlace").style.display = "none"
+	}
+	if (document.querySelector("#cepPlace").value == "" ||
+		document.querySelector("#cepPlace").value.length > 8 ) {
+		document.querySelector("#errorCepPlace").style.display = "block";
+	} else {
+		document.querySelector("#errorCepPlace").style.display = "none"
+	}
 
-    if (document.querySelector("#cepPlace").value == "" ||
-        document.querySelector("#cepPlace").value.length > 8 ||
-        document.querySelector("#cepPlace").value.length < 8 ||
-        typeof (document.querySelector("#cepPlace").value) != Number) {
-        document.querySelector("#errorCepPlace").style.display = "block"
-    } else {
-        document.querySelector("#errorCepPlace").style.display = "none"
-    }
+	if (document.querySelector("#complementPlace").value == "") {
+		document.querySelector("#errorComplementPlace").style.display = "block"
+	} else {
+		document.querySelector("#errorComplementPlace").style.display = "none"
+	}
 
-    if (document.querySelector("#complementPlace").value == "") {
-        document.querySelector("#errorComplementPlace").style.display = "block"
-    } else {
-        document.querySelector("#errorComplementPlace").style.display = "none"
-    }
+	if (document.querySelector("#cityPlace").value == "") {
 
-    if (document.querySelector("#cityPlace").value == "") {
+		document.querySelector("#errorCityPlace").style.display = "block"
+	} else {
+		document.querySelector("#errorCityPlace").style.display = "none"
+	}
 
-        document.querySelector("#errorCityPlace").style.display = "block"
-    } else {
-        document.querySelector("#errorCityPlace").style.display = "none"
-    }
+	if (document.querySelector("#statePlace").value == "") {
+		document.querySelector("#errorStatePlace").style.display = "block"
+	} else {
+		document.querySelector("#errorStatePlace").style.display = "none"
+	}
 
-    if (document.querySelector("#statePlace").value == "") {
-        document.querySelector("#errorStatePlace").style.display = "block"
-    } else {
-        document.querySelector("#errorStatePlace").style.display = "none"
-    }
-
-    if (document.querySelector("#descriptionPlace").value == "" ||
-        document.querySelector("#descriptionPlace").value.length < 50) {
-        document.querySelector("#errorDescriptionPlace").style.display = "block"
-    } else {
-        document.querySelector("#errorDescriptionPlace").style.display = "none"
-    }
+	if (document.querySelector("#descriptionPlace").value == "" ||
+		document.querySelector("#descriptionPlace").value.length < 50) {
+		document.querySelector("#errorDescriptionPlace").style.display = "block"
+	} else {
+		document.querySelector("#errorDescriptionPlace").style.display = "none"
+	}
 
 }
 
 function validateFormRegisterPartner() {
 
-    if (document.querySelector("#partnerName").value == "" ||
-        document.querySelector("#partnerName").value.length < 3) {
+	if (document.querySelector("#partnerName").value == "" ||
+		document.querySelector("#partnerName").value.length < 3) {
 
-        document.querySelector('#errorPartnerName').style.display = 'block';
-    } else {
-        document.querySelector('#errorPartnerName').style.display = 'none';
-    }
+		document.querySelector('#errorPartnerName').style.display = 'block';
+	} else {
+		document.querySelector('#errorPartnerName').style.display = 'none';
+	}
 
-    if (document.querySelector("#districtPartner").value == "") {
+	if (document.querySelector("#districtPartner").value == "") {
 
-        document.querySelector("#errorDistrictPartner").style.display = "block"
-    }
-    else {
-        document.querySelector("#errorDistrictPartner").style.display = "none"
-    }
+		document.querySelector("#errorDistrictPartner").style.display = "block"
+	}
+	else {
+		document.querySelector("#errorDistrictPartner").style.display = "none"
+	}
 
-    if (document.querySelector("#roadPartner").value == "") {
+	if (document.querySelector("#roadPartner").value == "") {
 
-        document.querySelector("#errorPartnerRoad").style.display = "block"
-    } else {
-        document.querySelector("#errorPartnerRoad").style.display = "none"
-    }
+		document.querySelector("#errorPartnerRoad").style.display = "block"
+	} else {
+		document.querySelector("#errorPartnerRoad").style.display = "none"
+	}
 
-    if (document.querySelector("#numberPartner").value == "" ||
-        document.querySelector("#numberPartner").value.length > 11 ||
-        document.querySelector("#numberPartner").value.length < 11 ||
-        typeof (document.querySelector("#numberPartner").value) != Number) {
+	if (document.querySelector("#numberPartner").value == "" ||
+		document.querySelector("#numberPartner").value.length > 11 ||
+		document.querySelector("#numberPartner").value.length < 11 ||
+		typeof (document.querySelector("#numberPartner").value) != Number) {
 
-        document.querySelector("#errorNumberPartner").style.display = "block"
+		document.querySelector("#errorNumberPartner").style.display = "block"
 
-    } else {
-        document.querySelector("#errorNumberPartner").style.display = "none"
-    }
+	} else {
+		document.querySelector("#errorNumberPartner").style.display = "none"
+	}
 
-    if (document.querySelector("#cepPartner").value == "" ||
-        document.querySelector("#cepPartner").value.length > 8 ||
-        document.querySelector("#cepPartner").value.length < 8 ||
-        typeof (document.querySelector("#cepPartner").value) != Number) {
-        document.querySelector("#errorCepPartner").style.display = "block"
-    } else {
-        document.querySelector("#errorCepPartner").style.display = "none"
-    }
+	if (document.querySelector("#cepPartner").value == "" ||
+		document.querySelector("#cepPartner").value.length > 8 ||
+		document.querySelector("#cepPartner").value.length < 8 ||
+		typeof (document.querySelector("#cepPartner").value) != Number) {
+		document.querySelector("#errorCepPartner").style.display = "block"
+	} else {
+		document.querySelector("#errorCepPartner").style.display = "none"
+	}
 
-    if (document.querySelector("#complementPartner").value == "") {
-        document.querySelector("#errorComplementPartner").style.display = "block"
-    } else {
-        document.querySelector("#errorComplementPartner").style.display = "none"
-    }
+	if (document.querySelector("#complementPartner").value == "") {
+		document.querySelector("#errorComplementPartner").style.display = "block"
+	} else {
+		document.querySelector("#errorComplementPartner").style.display = "none"
+	}
 
-    if (document.querySelector("#cityPartner").value == "") {
+	if (document.querySelector("#cityPartner").value == "") {
 
-        document.querySelector("#errorCityPartner").style.display = "block"
-    } else {
-        document.querySelector("#errorCityPartner").style.display = "none"
-    }
+		document.querySelector("#errorCityPartner").style.display = "block"
+	} else {
+		document.querySelector("#errorCityPartner").style.display = "none"
+	}
 
-    if (document.querySelector("#statePartner").value == "") {
-        document.querySelector("#errorStatePartner").style.display = "block"
-    } else {
-        document.querySelector("#errorStatePartner").style.display = "none"
-    }
-    if (document.querySelector('#categoryPartner').selectedIndex == 0) {
-        document.querySelector("#errorCategoryPartner").style.display = "block"
-    } else {
-        document.querySelector("#errorCategoryPartner").style.display = "none"
-    }
+	if (document.querySelector("#statePartner").value == "") {
+		document.querySelector("#errorStatePartner").style.display = "block"
+	} else {
+		document.querySelector("#errorStatePartner").style.display = "none"
+	}
+	if (document.querySelector('#categoryPartner').selectedIndex == 0) {
+		document.querySelector("#errorCategoryPartner").style.display = "block"
+	} else {
+		document.querySelector("#errorCategoryPartner").style.display = "none"
+	}
 }
 
 function validateLogin() {
-    let database = {
-        nome: ['Kyu', 'Ana', 'Edu'],
-        senha: 'KyuHayato'
-    }
-    for (let i = 0; i < database.nome.length - 1; i++) {
-        if (document.querySelector('#nameLogin').value != database.nome[i]) {
-            document.querySelector("#errorNameLogin").style.display = "block"
-        } else {
-            document.querySelector("#errorNameLogin").style.display = "none"
-        }
-    }
+	let database = {
+		nome: ['Kyu', 'Ana', 'Edu'],
+		senha: 'KyuHayato'
+	}
+	for (let i = 0; i < database.nome.length - 1; i++) {
+		if (document.querySelector('#nameLogin').value != database.nome[i]) {
+			document.querySelector("#errorNameLogin").style.display = "block"
+		} else {
+			document.querySelector("#errorNameLogin").style.display = "none"
+		}
+	}
 
-    if (document.querySelector('#Password').value != database.senha) {
-        document.querySelector("#errorPassword").style.display = "block"
-    } else {
-        document.querySelector("#errorPassword").style.display = "none"
-    }
+	if (document.querySelector('#Password').value != database.senha) {
+		document.querySelector("#errorPassword").style.display = "block"
+	} else {
+		document.querySelector("#errorPassword").style.display = "none"
+	}
 }
 function validateFormRegisterContact() {
-    if (document.querySelector("#nameContact").value == "" ||
-        document.querySelector("#nameContact").value.length < 3) {
+	if (document.querySelector("#nameContact").value == "" ||
+		document.querySelector("#nameContact").value.length < 3) {
 
-        document.querySelector('#errorNameContact').style.display = 'block';
-    } else {
-        document.querySelector('#errorNameContact').style.display = 'none';
-    }
+		document.querySelector('#errorNameContact').style.display = 'block';
+	} else {
+		document.querySelector('#errorNameContact').style.display = 'none';
+	}
 
-    if (document.querySelector("#phoneContact").value == "" ||
-        document.querySelector("#phoneContact").value.length > 11 ||
-        document.querySelector("#phoneContact").value.length < 11 ||
-        typeof (document.querySelector("#phoneContact").value) != Number) {
+	if (document.querySelector("#phoneContact").value == "" ||
+		document.querySelector("#phoneContact").value.length > 11 ||
+		document.querySelector("#phoneContact").value.length < 11 ||
+		typeof (document.querySelector("#phoneContact").value) != Number) {
 
-        document.querySelector("#errorPhoneContact").style.display = "block"
+		document.querySelector("#errorPhoneContact").style.display = "block"
 
-    } else {
-        document.querySelector("#errorPhoneContact").style.display = "none"
-    }
+	} else {
+		document.querySelector("#errorPhoneContact").style.display = "none"
+	}
 
-    if (document.querySelector('#subjectContact').selectedIndex == 0) {
-        document.querySelector("#errorSubjectContact").style.display = "block"
-    } else {
-        document.querySelector("#errorSubjectContact").style.display = "none"
-    }
+	if (document.querySelector('#subjectContact').selectedIndex == 0) {
+		document.querySelector("#errorSubjectContact").style.display = "block"
+	} else {
+		document.querySelector("#errorSubjectContact").style.display = "none"
+	}
 
-    if (document.querySelector("#emailContact").value == "") {
+	if (document.querySelector("#emailContact").value == "") {
 
-        document.querySelector("#errorEmailContact").style.display = "block"
-    }
-    else {
-        document.querySelector("#errorEmailContact").style.display = "none"
-    }
+		document.querySelector("#errorEmailContact").style.display = "block"
+	}
+	else {
+		document.querySelector("#errorEmailContact").style.display = "none"
+	}
 
-    if (document.querySelector("#messageContact").value == "" ||
-        document.querySelector("#messageContact").value.length < 50) {
-        document.querySelector("#errorMessageContact").style.display = "block"
-    } else {
-        document.querySelector("#errorMessageContact").style.display = "none"
-    }
-    console.log(document.querySelector('#subjectContact').selectedIndex)
+	if (document.querySelector("#messageContact").value == "" ||
+		document.querySelector("#messageContact").value.length < 50) {
+		document.querySelector("#errorMessageContact").style.display = "block"
+	} else {
+		document.querySelector("#errorMessageContact").style.display = "none"
+	}
+	console.log(document.querySelector('#subjectContact').selectedIndex)
 }
 // function validateNamePartner(namePartner) {
 
