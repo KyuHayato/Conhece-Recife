@@ -57,7 +57,7 @@ function validateFormRegisterPlace() {
 	}
 
 	if (document.querySelector("#descriptionPlace").value == "" ||
-		document.querySelector("#descriptionPlace").value.length < 50) {
+		document.querySelector("#descriptionPlace").value.length > 50) {
 		document.querySelector("#errorDescriptionPlace").style.display = "block"
 	} else {
 		document.querySelector("#errorDescriptionPlace").style.display = "none"
