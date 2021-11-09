@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import model.Partner;
+import model.PhoneNumber;
 
 public class PartnerDAO {
 
@@ -45,7 +46,6 @@ public class PartnerDAO {
 		sql += "VALUES (?,?,?,?,?,?,?,?,?)";
 		this.abrirConexao();
 
-
 		PreparedStatement preparedStatement = this.conn.prepareStatement(sql);
 
 		preparedStatement.setString(1, partner.getPartnerName());
@@ -58,19 +58,22 @@ public class PartnerDAO {
 		preparedStatement.setString(8, partner.getDistrict());
 		preparedStatement.setInt(9, partner.getNumber());
 	
-
-		// execute insert SQL stetement
-		preparedStatement.executeUpdate();
-		
-		String sql2 = "INSERT INTO telefone (telefone)";
-
-		sql2 += "VALUES (?)";
-		preparedStatement = this.conn.prepareStatement(sql2);
-		preparedStatement.setInt(10, partner.getPhoneNumber());
-		
 		preparedStatement.executeUpdate();
 		
 		this.fecharConexao();
+	}
+	public void addPhone(PhoneNumber phone) throws SQLException {
+		String sql = "INSERT INTO telefone ( telefone, fk_id_parceiro)";
+
+		sql += "VALUES (?,?)";
+		this.abrirConexao();
 		
+		PreparedStatement preparedStatement = this.conn.prepareStatement(sql);
+
+		preparedStatement.setString(1, phone.getPhoneNumber());
+		preparedStatement.setInt(2, phone.getPartner().getId());
+		preparedStatement.executeUpdate();
+		
+		this.fecharConexao();
 	}
 }

@@ -3,7 +3,7 @@
   
 <!DOCTYPE html>
 <%@page import="model.Place" %>
-<%@page import="DAO.CRUD_place" %>
+<%@page import="DAO.PlaceDAO" %>
 <html>
 
 <head>
@@ -36,7 +36,7 @@ try {
 	lugar.setState("statePlace");
 	lugar.setNumber(Integer.parseInt(numberPlace));
 	
-	CRUD_place dados1 = new CRUD_place();
+	PlaceDAO dados1 = new PlaceDAO();
 	dados1.addPlace(lugar);
 	
 	System.out.println("executado com sucesso");

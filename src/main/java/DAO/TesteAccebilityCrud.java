@@ -1,8 +1,9 @@
 package DAO;
 
+import model.Accessibility;
 import model.Place;
 
-public class TesteLugarCrud {
+public class TesteAccebilityCrud {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -13,21 +14,14 @@ public class TesteLugarCrud {
 		//A pag processanNovoLugar faz esse mesmo processo porem pegando os dados do formulario,atraves de request e nao manualmente como aqui
 		try {
 			
-			Place lugar = new Place();
-			lugar.setName("JEFFFFFFFF");
-			lugar.setDescription(" Aqu ");
-			lugar.setCity("Camaragibe");
-			lugar.setRoad("Boa Vista");
-			lugar.setComplement("Avenida Egg");
-			lugar.setCep(52074255);
-			lugar.setDistrict("Boa Vista");
-			lugar.setState("Pernambuco");
-			lugar.setNumber(76767);
+			Accessibility accessibility = new Accessibility();
+			accessibility.setType("JEFFFFFFFF");
+			
 			
 			
 			//manda os dados do objeto lugar para o objeto dados
-			PlaceDAO dados1 = new PlaceDAO();
-			dados1.addPlace(lugar);
+			AccessibilityDAO dados1 = new AccessibilityDAO();
+			dados1.addAccessibility(accessibility);
 			
 			System.out.println("executado com sucesso");
 		}catch(Exception ex){

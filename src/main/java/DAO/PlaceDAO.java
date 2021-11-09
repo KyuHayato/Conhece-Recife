@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import model.Place;
 import java.sql.DriverManager;
 
-public class CRUD_place {
+public class PlaceDAO {
 
 	private Connection conn;
 	private static String DRIVER_MYSQL = "com.mysql.cj.jdbc.Driver";
