@@ -22,20 +22,20 @@ try {
 	String placeRoad=request.getParameter("placeRoad");
 	String numberPlace=request.getParameter("numberPlace");
 	String cepPlace=request.getParameter("cepPlace");
-	String Complemento=request.getParameter("complementPlace");
+	String complementPlace=request.getParameter("complementPlace");
 	String statePlace=request.getParameter("statePlace");
 	String cityPlace=request.getParameter("cityPlace");
 
-	
+	//pega o parametro recebido acima e envia para o banco
 	Place lugar = new Place();
-	lugar.setName("namePlace");
-	lugar.setDescription(" districtPlace");
-	lugar.setCity("cityPlace");
-	lugar.setRoad("placeRoad");
-	lugar.setComplement("complementPlace");
+	lugar.setName(namePlace);
+	lugar.setDescription(districtPlace);
+	lugar.setCity(cityPlace);
+	lugar.setRoad(placeRoad);
+	lugar.setComplement(complementPlace);
 	lugar.setCep(Integer.parseInt(cepPlace));
-	lugar.setDistrict(" districtPlace");
-	lugar.setState("statePlace");
+	lugar.setDistrict(districtPlace);
+	lugar.setState(statePlace);
 	lugar.setNumber(Integer.parseInt(numberPlace));
 	
 	PlacesDAO dados1 = new PlacesDAO();

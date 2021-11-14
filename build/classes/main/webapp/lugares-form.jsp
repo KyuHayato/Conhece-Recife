@@ -41,8 +41,7 @@
 				<img src=images/bolas-design.png
 					style="position: absolute; width: 133.5px; height: 135px; top: 390px; right: 330px; left: 0, 8px;">
 			</div>
-			<form method="POST" name="formRegisterPlace" id="formRegisterPlace"
-				action="processaNovoLugar.jsp">
+			<form class="form" action="processaNovoLugar.jsp">
 				<div class="row justify-content-center">
 					<div class="col-lg-8">
 						<div class=" border border-dark p-4 radius"
@@ -161,7 +160,7 @@
 								</div>
 							</div>
 						</div>
-						<button type="button" class="btn btn-dark btn-block radius mt-4"
+						<button type="submit" class="btn btn-dark btn-block radius mt-4"
 							onclick="validateFormRegisterPlace(this)">Enviar</button>
 						<div class="row justify-content-center">
 							<div class="col-4">
