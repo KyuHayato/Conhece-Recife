@@ -15,7 +15,7 @@ public class PlacesDAO {
 	private static String PORTA_BANCO = "3306";
 	private static String USUARIO = "root";
 
-	private static String SENHA = "je83491694"; //Lembre sempre de colocar sua senha
+	private static String SENHA = "Rocklee767"; //Lembre sempre de colocar sua senha
 
 	//AQUI É ONDE RECEBE OS DADOS INSERIDOS DAS PAGINAS RESPONSAVEIS POR ELES, COMO TesteCupomCrud.java E OU processaNovoLugar.jsp , mandando os dados para o banco. 
 

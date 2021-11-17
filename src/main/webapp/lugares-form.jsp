@@ -41,7 +41,7 @@
 				<img src=images/bolas-design.png
 					style="position: absolute; width: 133.5px; height: 135px; top: 390px; right: 330px; left: 0, 8px;">
 			</div>
-			<form class="form" action="processaNovoLugar.jsp">
+			<form class="form" action="controller/controllerPlace.jsp">
 				<div class="row justify-content-center">
 					<div class="col-lg-8">
 						<div class=" border border-dark p-4 radius"
@@ -165,8 +165,7 @@
 						<div class="row justify-content-center">
 							<div class="col-4">
 								<button type="button" class="btn button-home radius mt-4 ml-5">
-									<a href="index.html"
-										style="color: black; text-decoration: none;"> < Home</a>
+									<a href="index.html" style="color: black; text-decoration: none;"> Home</a>
 								</button>
 							</div>
 						</div>
