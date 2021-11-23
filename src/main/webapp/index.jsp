@@ -79,6 +79,8 @@
                                 <a class="nav-link btn btn-dark text-white radius" href="contato.jsp">Contato</a>
                             </li>
                         </div>
+                        
+                        
                     </div>
                 </div>
                 <div class="col-2">
@@ -108,20 +110,22 @@
                 <div class="col mr-3">
                     <h1 style="font-size: 61px; font-weight: bold;">Recife</h1>
                     <p id="text-home" style="position:relative; font-size: 25px; ">
-                        É um município brasileiro, capital do estado de Pernambuco, localizado na Região Nordeste do
-                        país. Com área territorial de aproximadamente 218 km², é formado por uma planície aluvial, ilhas, penínsulas e
-                        manguezais como suas principais características geográficas. É a cidade nordestina com o melhor Índice de
-                        Desenvolvimento Humano (IDH-M), o Recife é a quarta capital brasileira na hierarquia da gestão federal,
-                        após Brasília, Rio de Janeiro e São Paulo, e possui o quarto aglomerado urbano mais populoso do
-                        Brasil, com 4 milhões de habitantes em 2017, superado apenas pelas concentrações urbanas de São Paulo, Rio de
-                        Janeiro e Belo Horizonte. A capital pernambucana tem, num raio de 300 km, três capitais estaduais sob sua
-                        influência direta: João Pessoa (122 km), Maceió (257 km) e Natal (286 km).
+                    	A capital do estado de Pernambuco, no nordeste do Brasil, distingue-se pelos seus vários rios, pontes, ilhéus e penínsulas. Recife Antigo, na própria ilha junto ao porto, é o centro histórico da cidade antiga que data do século XVI. A sul, a popular Praia de Boa Viagem é protegida por recifes e está ladeada de blocos de apartamentos elevados, hotéis modernos e restaurantes.
+                       	É a cidade nordestina com o melhor Índice de Desenvolvimento Humano (IDH-M), o Recife é a quarta capital brasileira na hierarquia da gestão federal,
+                        após Brasília, Rio de Janeiro e São Paulo, e possui o quarto aglomerado urbano mais populoso do Brasil, com 4 milhões de habitantes em 2017, superado apenas pelas concentrações urbanas de São Paulo, Rio de
+                        Janeiro e Belo Horizonte. A capital pernambucana tem, num raio de 300 km, três capitais estaduais sob sua influência direta: João Pessoa (122 km), Maceió (257 km) e Natal (286 km).
+                        O Centro Histórico do Recife, em que pesem as demolições e descaracterizações, representa em conjunto com os sítios históricos de Olinda, Igarassu e dos Guararapes um dos mais valiosos patrimônios barrocos do Brasil.
                     </p>
-					
-					
-					<iframe width="450" height="250" src="https://www.youtube.com/embed/TsmSZdQuxgs" title="Conhece Recife" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
+                    
+                    <div>
+						<p id="text-home" style="text-align:left">
+						Conheça um pouco sobre o projeto:
+						<iframe width="500" height="300" src="https://www.youtube.com/embed/TsmSZdQuxgs" title="Conhece Recife" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style=" margin: 50px 100px 100px 100px;"></iframe>
+						</p>
                 	</div>
+               </div>
+					
+		
                  
                 
                 
@@ -130,7 +134,7 @@
                         <a class="navbar-brand" href="#">
                             <img src="images/Rectangle 54-home.png" alt="retangulo2" style=" position: absolute; left:-10%;">
                              <img src="images/Rectangle 56-home.png" alt="retangulo2" style=" position: absolute; left:0;">
-                    		<img src="images/Ellipse com foto.png" alt="images" style="position:relative; margin-top:150px; right:-70px;">
+                    		<img src="images/Ellipse com foto.png" alt="images" style="position:relative; margin-top:130px; right:-70px;">
                     </a>
                 </div>
              </div>
@@ -176,11 +180,13 @@
                     <div class="col">
                         <div class="row justify-content-end">
                         <div class=" style="position: right;width: 650.42px;left:-53%;height: 266px;top: -33px;>
-                            <li class="nav-item" style=" list-style: none;">
+                            <li class="nav-item" style=" list-style: none;text-color:green;">
                                 <a class="nav-link text-dark" href="login-administrador.jsp">Login-Admin</a>
                             </li>
                         </div>
                     </div>
+                    
+                    
         </div>
 
     </section>
