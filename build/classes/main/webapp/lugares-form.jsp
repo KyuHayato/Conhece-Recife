@@ -165,7 +165,7 @@
 						<div class="row justify-content-center">
 							<div class="col-4">
 								<button type="button" class="btn button-home radius mt-4 ml-5">
-									<a href="index.html" style="color: black; text-decoration: none;"> Home</a>
+									<a href="listagem-administrador.jsp" style="color: black; text-decoration: none;"> Home</a>
 								</button>
 							</div>
 						</div>

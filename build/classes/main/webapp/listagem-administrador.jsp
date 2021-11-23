@@ -43,14 +43,14 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <a href="cadastro-lugares-form.jsp" class="form-control radius input-form"
+                                        <a href="lugares-form.jsp" class="form-control radius input-form"
                                             style="text-decoration: none; color: #495057; background: linear-gradient(180deg, rgba(255, 247, 206, 0.33) 0%, rgba(178, 221, 237, 0.33) 100%);"
                                             name="registerPlaces" id="registerPlaces"> Cadastrar Lugares</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <a href="cadastro-parceiros-form.jsp" class="form-control radius input-form"
+                                        <a href="parceiros-form.jsp" class="form-control radius input-form"
                                             style="text-decoration: none; color: #495057; background: linear-gradient(180deg, rgba(255, 247, 206, 0.33) 0%, rgba(178, 221, 237, 0.33) 100%);"
                                             name="registerPartner" id="registerPartner"> Cadastrar Parceiro</a>
                                     </div>

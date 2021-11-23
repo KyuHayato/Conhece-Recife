@@ -80,55 +80,9 @@
 
 					}
 					%>
-
 				</tbody>
 			</table>
 		</div>
-
-            <div class="container">
-                <table width="1200" border="1px" >
-                    <thead>
-                        <tr>
-                            
-                            <th width="330" height="40" bgcolor="#CCC">NOME DO LUGAR</th>
-                            <th width="200" height="40" bgcolor="#CCC">CIDADE</th>
-                            <th width="200" height="40" bgcolor="#CCC">ESTADO</th>
-                            <th width="200" height="40" bgcolor="#CCC">BAIRRO</th>
-                            <th width="200" height="40" bgcolor="#CCC">NUMERO</th>
-                            
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            
-                            <td width="200" height="40"></td>
-                            <td width="200" height="40"></td>
-                            <td width="200" height="40"></td>
-                            <td width="200" height="40"></td>
-                            <td width="200" height="40"></td>
-                        
-                            <td width="160" height="40">
-                                <div class="row justify-content-left">
-                                    <div class="col-4">
-                                        <button type="button" class="btn button-home radius pt-2" style="background-color: green; height:40px;">
-                                            <a href="" style="color: white; font-weight: strong; text-decoration: none; ">Alterar</a></button>
-                                    </div>
-                                </div>
-                            </td>
-
-                            <td width="160" height="40">
-                                <div class="row justify-content-left">
-                                    <div class="col-4">
-                                        <button type="button" class="btn button-home radius pt-2" style="background-color: red; height:40px;">
-                                            <a href="#" style="color: white; font-weight: strong; text-decoration: none;">Excluir</a></button>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>       
-            </div>
-
 		<footer>
 			<div class="row justify-content-end">
 				<div class="col-6">
