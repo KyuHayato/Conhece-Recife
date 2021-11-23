@@ -25,7 +25,7 @@
                                 style="position: absolute; width: 970.33px; top: -27.21px; left:-190%;">
                             <img src="images/Rectangle 53.png" alt="retangulo2"
                                 style="position: relative;width: 650.42px;left:-53%;height: 266px;top: -33px;">
-                            <img src="images/Conhece Recife Logo.png" alt="logo"
+                            <img src="images/CR GIF.gif" alt="logo"
                                 style="position: absolute;width: 162px;height: 170px;left:-80%;top: 14px;">
                         </a>
                     </div>
@@ -48,7 +48,7 @@
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
                                             style="background-color: #343a40;">
                                             <a class="dropdown-item button-dropdown text-center"
-                                                href="cinema.html">Cinema</a>
+                                                href="cinema.jsp">Cinema</a>
                                             <a class="dropdown-item button-dropdown text-center" href="#">Teatro</a>
                                             <a class="dropdown-item button-dropdown text-center" href="#">Museus</a>
                                             <a class="dropdown-item button-dropdown text-center" href="#">Parques</a>
@@ -64,19 +64,19 @@
                             <li class="nav-item active" style=" list-style: none;">
 
                                 <a class="nav-link btn btn-dark text-white radius ml-4"
-                                    href="parceiros.html">Parceiros</a>
+                                    href="parceiros.jsp">Parceiros</a>
                             </li>
                         </div>
 
                         <div class="col-lg-3">
                             <li class="nav-item" style=" list-style: none;">
-                                <a class="nav-link btn-dark text-white radius text-center" href="quem-somos.html">Quem somos</a>
+                                <a class="nav-link btn-dark text-white radius text-center" href="quem-somos.jsp">Quem somos</a>
                             </li>
                         </div>
 
                         <div class="col-lg-3">
                             <li class="nav-item" style=" list-style: none;">
-                                <a class="nav-link btn btn-dark text-white radius" href="contato.html">Contato</a>
+                                <a class="nav-link btn btn-dark text-white radius" href="contato.jsp">Contato</a>
                             </li>
                         </div>
                     </div>
@@ -107,33 +107,35 @@
             <div class="row">
                 <div class="col mr-3">
                     <h1 style="font-size: 61px; font-weight: bold;">Recife</h1>
-                    <p id="text-home">
+                    <p id="text-home" style="position:relative; font-size: 25px; ">
                         É um município brasileiro, capital do estado de Pernambuco, localizado na Região Nordeste do
-                        país. Com
-                        área
-                        territorial de aproximadamente 218 km², é formado por uma planície aluvial, ilhas, penínsulas e
-                        manguezais
-                        como suas principais características geográficas. É a cidade nordestina com o melhor Índice de
-                        Desenvolvimento Humano (IDH-M), o Recife é a quarta capital brasileira na hierarquia da gestão
-                        federal,
-                        após
-                        Brasília, Rio de Janeiro e São Paulo, e possui o quarto aglomerado urbano mais populoso do
-                        Brasil, com 4
-                        milhões de habitantes em 2017, superado apenas pelas concentrações urbanas de São Paulo, Rio de
-                        Janeiro
-                        e
-                        Belo Horizonte. A capital pernambucana tem, num raio de 300 km, três capitais estaduais sob sua
-                        influência
-                        direta: João Pessoa (122 km), Maceió (257 km) e Natal (286 km).
+                        país. Com área territorial de aproximadamente 218 km², é formado por uma planície aluvial, ilhas, penínsulas e
+                        manguezais como suas principais características geográficas. É a cidade nordestina com o melhor Índice de
+                        Desenvolvimento Humano (IDH-M), o Recife é a quarta capital brasileira na hierarquia da gestão federal,
+                        após Brasília, Rio de Janeiro e São Paulo, e possui o quarto aglomerado urbano mais populoso do
+                        Brasil, com 4 milhões de habitantes em 2017, superado apenas pelas concentrações urbanas de São Paulo, Rio de
+                        Janeiro e Belo Horizonte. A capital pernambucana tem, num raio de 300 km, três capitais estaduais sob sua
+                        influência direta: João Pessoa (122 km), Maceió (257 km) e Natal (286 km).
                     </p>
+					
+					
+					<iframe width="450" height="250" src="https://www.youtube.com/embed/TsmSZdQuxgs" title="Conhece Recife" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+                	</div>
+                 
+                
+                
+				
+                <div class="col-4">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/Rectangle 54-home.png" alt="retangulo2" style=" position: absolute; left:-10%;">
+                             <img src="images/Rectangle 56-home.png" alt="retangulo2" style=" position: absolute; left:0;">
+                    		<img src="images/Ellipse com foto.png" alt="images" style="position:relative; margin-top:150px; right:-70px;">
+                    </a>
                 </div>
-                <div class="col radius" style="background: #ffff80;
-                transform: matrix(0.99, 0.14, 0.14, -0.99, 0, 0); ">
-                    <img src="images/Ellipse com foto.png" alt="images"
-                        style="transform: matrix(0.99, 0.14, 0.14, -0.99, 0, 0);">
-
-                </div>
-            </div>
+             </div>
+                
+           
 
             <div class="row">
                 <div class="col-4">
@@ -175,7 +177,7 @@
                         <div class="row justify-content-end">
                         <div class=" style="position: right;width: 650.42px;left:-53%;height: 266px;top: -33px;>
                             <li class="nav-item" style=" list-style: none;">
-                                <a class="nav-link text-dark" href="login-administrador.html">Login-Admin</a>
+                                <a class="nav-link text-dark" href="login-administrador.jsp">Login-Admin</a>
                             </li>
                         </div>
                     </div>
