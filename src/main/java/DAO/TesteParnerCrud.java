@@ -1,7 +1,7 @@
 package DAO;
 
 import model.Partner;
-import model.PhoneNumber;
+
 
 
 public class TesteParnerCrud {
@@ -12,23 +12,23 @@ public class TesteParnerCrud {
 		try {
 			
 			Partner partner = new Partner();
-			partner.setPartnerName("Teste a");
-			partner.setCategory("Aqudxs");
-			partner.setCity("Camaragibe");
-			partner.setRoad("Boa Vista");
-			partner.setComplement("Avenida Egg");
+			/*
+			partner.setPartnerName("SeringaX1");
+			partner.setCategory("Teste");
+			partner.setCity("Recife");
+			partner.setRoad("Janga");
+			partner.setComplement("Avenida Triste");
 			partner.setCep(574255);
-			partner.setDistrict("Boa Vista");
+			partner.setDistrict("Pernainba");
 			partner.setState("Pernambuco");
 			partner.setNumber(76767);
+			partner.setPhoneNumber(1232334323);
 			
-			
+			*/
+			//partner.setId(2);
 			PartnerDAO dados1 = new PartnerDAO();
-			//dados1.addPartner(partner);
-			PhoneNumber numero = new PhoneNumber();
-			numero.setPhoneNumber("1243");
-			numero.getPartner().setId(1);
-			dados1.addPhone(numero);
+			dados1.selectPartner();
+			
 			System.out.println("executado com sucesso");
 		}catch(Exception ex){
 			System.out.println(ex .getMessage());

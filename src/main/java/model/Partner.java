@@ -14,6 +14,7 @@ public class Partner{
 	private String district;
 	private String state;
 	private Integer number;
+	private Integer phoneNumber;
 	
 	public String getPartnerName() {
 		return partnerName;
@@ -76,5 +77,10 @@ public class Partner{
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	
+	public Integer getPhoneNumber() {
+		return phoneNumber;
+	}
+	public void setPhoneNumber(Integer phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
 }

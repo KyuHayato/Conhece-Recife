@@ -2,7 +2,10 @@ package DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+
 import model.Place;
 import java.sql.DriverManager;
 
@@ -84,4 +87,26 @@ public class PlaceDAO {
 	       
 	        this.fecharConexao();
 	    }
+ public ArrayList<Place> selectPlace() throws Exception {
+		  
+		  ArrayList<Place>retorno=new ArrayList<>();
+		  String sql = "select a.nome,a.cidade,a.estado, a.bairro, a.numero " ;
+		  sql+=" from lugar as a";
+		  this.abrirConexao();
+		  PreparedStatement preparedStatement =this.conn.prepareStatement(sql);
+		  ResultSet leitor = preparedStatement.executeQuery();
+		  
+		 while (leitor.next()) {
+			Place a = new Place();
+			a.setName(leitor.getString("nome"));
+			a.setCity(leitor.getString("cidade"));
+			a.setState(leitor.getString("estado"));
+			a.setRoad(leitor.getString("bairro"));
+			a.setNumber(leitor.getInt("Numero"));
+			retorno.add(a);
+		  }
+		 this.fecharConexao();
+		return retorno;
+		   
+	  }
 }
