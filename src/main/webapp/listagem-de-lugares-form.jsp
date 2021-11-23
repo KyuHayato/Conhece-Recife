@@ -78,14 +78,13 @@
 
 						out.print(" </tr>");
 
-<<<<<<< HEAD
 					}
 					%>
 
 				</tbody>
 			</table>
 		</div>
-=======
+
             <div class="container">
                 <table width="1200" border="1px" >
                     <thead>
@@ -129,7 +128,6 @@
                     </tbody>
                 </table>       
             </div>
->>>>>>> 4600100d59235fba8bf2cf192b8bcc5a7e85c115
 
 		<footer>
 			<div class="row justify-content-end">
