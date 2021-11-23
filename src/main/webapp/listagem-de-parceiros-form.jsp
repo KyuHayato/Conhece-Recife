@@ -54,7 +54,7 @@
                             <td width="200" height="40"></td>
                             <td width="200" height="40"></td>
                         
-                            <td >
+                             <td width="160" height="40">
                                 <div class="row justify-content-left">
                                     <div class="col-4">
                                         <button type="button" class="btn button-home radius pt-2" style="background-color: green; height:40px;">
@@ -63,15 +63,17 @@
                                 </div>
                             </td>
 
-                            <td >
+                             <td width="160" height="40">
                                 <div class="row justify-content-left">
                                     <div class="col-4">
-                                        <button type="button" class="btn button-home radius pt-2" style="background-color: red; height:40px;">
+                                        <button type="button" class="btn button-home radius pt-2" style="background-color: red; height:40px; ">
                                             <a href="" style="color: white; font-weight: strong; text-decoration: none;">Excluir</a></button>
                                     </div>
                                 </div>
                             </td>
+                            
                         </tr>
+                        
                     </tbody>
                 </table>       
             </div>

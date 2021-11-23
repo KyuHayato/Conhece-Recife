@@ -4,7 +4,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"> 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <title>Conhece Recife - Cinema São Luiz</title>
+    <title>Conhece Recife - Cinema S&Atildeo Luiz</title>
 </head>
 
 <body>
@@ -36,20 +36,20 @@
                 <article class="post_1" style="align-items: center;text-align: justify;">
                     <p>
                    
-                    <h4>Inaugurado no dia 6 de setembro de 1952 e situado às margens do Rio Capibaribe e na cabeceira da
-                        mais moderna ponte da cidade à época, a Ponte Duarte Coelho, o São Luiz tornou-se um dos mais
-                        emblemáticos cinemas do Recife, prezando por essa arte em sua concepção clássica, com exibição
-                        em cine-teatro. Hoje o Cinema São Luiz é o de mais rica concepção artística e arquitetônica do
-                        Recife e um dos últimos cinemas de rua do país.
+                    <h4>Inaugurado no dia 6 de setembro de 1952 e situado as margens do Rio Capibaribe e na cabeceira da
+                        mais moderna ponte da cidade a epoca, a Ponte Duarte Coelho, o Sao Luiz tornou-se um dos mais
+                        emblematicos cinemas do Recife, prezando por essa arte em sua concepcao classica, com exibicao
+                        em cine-teatro. Hoje o Cinema Sao Luiz e o de mais rica concepcao artistica e arquitetonica do
+                        Recife e um dos ultimos cinemas de rua do pais.
                     </h4>
                     </p>
                     <p>
-                    <h4>Em 2008 o prédio foi tombado como monumento histórico pelo Governo do Estado que, por meio da
-                        Fundarpe, trouxe de volta ao público o tradicional Cinema São Luiz, revitalizado e sem os vícios
-                        da mídia cinematográfica, preservando e difundindo a arte do cinema e contribuindo para o
-                        resgate da história da cidade e manutenção de um verdadeiro templo de sua cultura. Em 5 de
+                    <h4>Em 2008 o predio foi tombado como monumento historico pelo Governo do Estado que, por meio da
+                        Fundarpe, trouxe de volta ao publico o tradicional Cinema Sao Luiz, revitalizado e sem os vicios
+                        da midia cinematografica, preservando e difundindo a arte do cinema e contribuindo para o
+                        resgate da historia da cidade e manutencao de um verdadeiro templo de sua cultura. Em 5 de
                         novembro de 2015, o cinema pernambucano inaugurou seu novo projetor digital Barco 23B 4K, com
-                        capacidade de projetar filmes em 3D. O São Luiz agora também conta com um servidor digital e
+                        capacidade de projetar filmes em 3D. O Sao Luiz agora tambem conta com um servidor digital e
                         novos processadores e amplificadores de som para formato Dolby 7.1.
                     </h4>
                     </p>
@@ -59,7 +59,7 @@
                 <aside style="margin-left: 20px;">
                     <div style="align-items: center;text-align: center;">
                         <u>
-                            <h1 id="Titulo" style='position:relative;top: 29px;font-family: Fjalla One;text-transform: uppercase ; left: 17px;font-size: 50px;'>Cinema São Luiz </h1>
+                            <h1 id="Titulo" style='position:relative;top: 29px;font-family: Fjalla One;text-transform: uppercase ; left: 17px;font-size: 50px;'>Cinema S&Atildeo Luiz </h1>
                         </u>
                         <h2 id="Titulo2" style='position:absolute; top: 0px; letter-spacing: -0.15em;font-family: Fjalla One;text-transform: uppercase; left:10%;font-size: 75px;color: rgba(0, 0, 0, 0.08) ;'>CINEMA SÃO LUIZ </h2>
                     </div>
@@ -79,8 +79,8 @@
                             style='position:absolute; top: 230px; left:92%;'>
                     </div>
                     <div style="align-items: center;text-align: center;margin-top: 30px;">
-                        <h7>Endereço: Rua da Aurora, 175, Boa Vista – Recife</h7>
-                        <h7> Visitação: Terça a domingo, nos horários das sessões</h7>
+                        <h7>Endere&ccedilo: Rua da Aurora, 175, Boa Vista, Recife</h7>
+                        <h7> Visita&ccedilao: Terca a domingo, nos horarios das sessoes</h7>
                         <h7> Telefone: (81) 3184.3157</h7>
                         <h7> E-mail: saoluiz.recife@gmail.com </h7>
                     </div>
@@ -96,12 +96,12 @@
                     <div class="col-sm-4"></div>
                     <div class="col-sm-4">
                         <h5><strong>PARCEIROS:</strong></h5>
-                        <h7>Tire um print desta tela e aprente no estabelecimentos</h7>
+                        <h7>Tire um print desta tela e apresente no estabelecimento</h7>
                         <div style="margin-top: 10px;">
                             <img src="images/qr_code.png" alt="Qr_code">
                         </div>
                         <h6 style="color:red;">MC DONALDS - 5% DE DESCONTO </h6>
-                        <h6 style="color:red;"> SUBWAY - CLONE DE SUGESTÃO DO DIA - 5% DE DESCONTO </h6>
+                        <h6 style="color:red;"> SUBWAY - CLONE DE SUGESTAO DO DIA - 5% DE DESCONTO </h6>
                     </div>
 
 
