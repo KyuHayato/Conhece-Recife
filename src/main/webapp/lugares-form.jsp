@@ -63,8 +63,7 @@
 								<div class="col-6">
 									<div class="form-group">
 										<input type="text" class="form-control radius input-form"
-											placeholder="Bairro" name="districtPlace" id="districtPlace"
-											onchange="validadeDistrictPlace(this)">
+											placeholder="Bairro" name="districtPlace" id="districtPlace">
 										<div>
 											<span class="style-error" id="errorDistrictPlace"
 												style="display: none;">Bairro invalido, insira os
@@ -160,7 +159,7 @@
 								</div>
 							</div>
 						</div>
-						<button type="submit" class="btn btn-dark btn-block radius mt-4"
+						<button type=submit class="btn btn-dark btn-block radius mt-4"
 							onclick="validateFormRegisterPlace(this)">Enviar</button>
 						<div class="row justify-content-center">
 							<div class="col-4">

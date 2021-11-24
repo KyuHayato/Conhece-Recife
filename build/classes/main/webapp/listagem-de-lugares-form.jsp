@@ -60,9 +60,9 @@
 					for (Place place : lista) {
 						out.print(" <tr>");
 						out.print("<td>" + place.getName() + "</td>");
-						out.print("<td>" + place.getName() + "</td>");
-						out.print("<td>" + place.getName() + "</td>");
-						out.print("<td>" + place.getName() + "</td>");
+						out.print("<td>" + place.getCity() + "</td>");
+						out.print("<td>" + place.getState() + "</td>");
+						out.print("<td>" + place.getDistrict() + "</td>");
 						out.print("<td>" + place.getNumber() + "</td>");
 
 						out.print("<td>");

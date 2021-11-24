@@ -31,7 +31,7 @@ function validateFormRegisterPlace() {
 		document.querySelector("#errorNumberPlace").style.display = "none"
 	}
 	if (document.querySelector("#cepPlace").value == "" ||
-		document.querySelector("#cepPlace").value.length > 8 ) {
+		document.querySelector("#cepPlace").value.length < 8 ) {
 		document.querySelector("#errorCepPlace").style.display = "block";
 	} else {
 		document.querySelector("#errorCepPlace").style.display = "none"

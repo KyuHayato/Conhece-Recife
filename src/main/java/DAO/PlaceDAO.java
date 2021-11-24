@@ -101,7 +101,7 @@ public class PlaceDAO {
 			a.setName(leitor.getString("nome"));
 			a.setCity(leitor.getString("cidade"));
 			a.setState(leitor.getString("estado"));
-			a.setRoad(leitor.getString("bairro"));
+			a.setDistrict(leitor.getString("bairro"));
 			a.setNumber(leitor.getInt("Numero"));
 			retorno.add(a);
 		  }
