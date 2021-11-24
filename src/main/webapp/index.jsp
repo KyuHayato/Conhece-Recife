@@ -25,7 +25,7 @@
                                 style="position: absolute; width: 970.33px; top: -27.21px; left:-190%;">
                             <img src="images/Rectangle 53.png" alt="retangulo2"
                                 style="position: relative;width: 650.42px;left:-53%;height: 266px;top: -33px;">
-                            <img src="images/CR GIF.gif" alt="logo"
+                            <img src="images/CR4.gif" alt="logo"
                                 style="position: absolute;width: 162px;height: 170px;left:-80%;top: 14px;">
                         </a>
                     </div>
