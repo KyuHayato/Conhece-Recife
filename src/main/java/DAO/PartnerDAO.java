@@ -111,9 +111,9 @@ public class PartnerDAO {
 
 		// instrução sql correspondente a inserção do aluno
 		String sql = " select partner.nome, partner.categoria, partner.cidade, partner.rua,"
-				+ "partner.complemento, partner.cep, partner.bairro,partner.estado," + 
+				+ "partner.complemento, partner.cep, partner.bairro, partner.estado," + 
 				"partner.numero, partner.telefone ";
-		sql += " from parceiro as partner ";
+		sql += " from parceiro as partner";
 		this.abrirConexao();
 		// preparando a instrução
 		PreparedStatement preparedStatement = this.conn.prepareStatement(sql);

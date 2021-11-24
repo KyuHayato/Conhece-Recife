@@ -91,9 +91,7 @@ function validateFormRegisterPartner() {
 	}
 
 	if (document.querySelector("#numberPartner").value == "" ||
-		document.querySelector("#numberPartner").value.length > 11 ||
-		document.querySelector("#numberPartner").value.length < 11 ||
-		typeof (document.querySelector("#numberPartner").value) != Number) {
+		document.querySelector("#numberPartner").value.length > 11) {
 
 		document.querySelector("#errorNumberPartner").style.display = "block"
 
@@ -102,10 +100,8 @@ function validateFormRegisterPartner() {
 	}
 
 	if (document.querySelector("#cepPartner").value == "" ||
-		document.querySelector("#cepPartner").value.length > 8 ||
-		document.querySelector("#cepPartner").value.length < 8 ||
-		typeof (document.querySelector("#cepPartner").value) != Number) {
-		document.querySelector("#errorCepPartner").style.display = "block"
+		document.querySelector("#cepPartner").value.length < 8 ) {
+		document.querySelector("#errorPartner").style.display = "block";
 	} else {
 		document.querySelector("#errorCepPartner").style.display = "none"
 	}

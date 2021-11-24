@@ -157,7 +157,7 @@
 
                             </div>
                         </div>
-                        <button type="button" class="btn btn-dark btn-block radius mt-4"
+                        <button type="submit" class="btn btn-dark btn-block radius mt-4"
                             onclick="validateFormRegisterPartner(this)">Enviar</button>
                         <div class="row justify-content-center">
                             <div class="col-4">
