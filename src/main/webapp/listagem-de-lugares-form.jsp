@@ -33,11 +33,9 @@
 		<div class="row justify-content-center">
 			<div class="col--lg-12 mb-4">
 				<h1 class="label-disabled"
-					style="font-family: Fjalla One; font-size: 75px;">LISTAR
-					LUGARES</h1>
+					style="font-family: Fjalla One; font-size: 75px;">LUGARES</h1>
 				<h1 class="text-center"
-					style="font-family: Fjalla One; font-size: 50px;">LISTAR
-					LUGARES</h1>
+					style="font-family: Fjalla One; font-size: 50px;">LUGARES</h1>
 			</div>
 		</div>
 
@@ -68,7 +66,7 @@
 						out.print("<td>");
 						out.print(
 						"<button type='button' class='btn button-home radius pt-2' style='background-color: green; height:40px;'>");
-						out.print("<a href='#' style='color: white; font-weight: strong; text-decoration: none; '>Alterar</a></button>");
+						out.print("<a href='#' style='color: white; font-weight: strong; text-decoration: none; '>Atualizar</a></button>");
 						out.print("</td>");
 
 						out.print("<td>");
@@ -82,6 +80,15 @@
 					%>
 				</tbody>
 			</table>
+			
+			<div class="row justify-content-center">
+				<div class="col-4">
+					<button type="button" class="btn button-home radius mt-4">
+						<a href="listagem-administrador.jsp" style="color: black; text-decoration: none;">
+							< Home</a>
+					</button>
+				</div>
+			</div>
 		</div>
 		<footer>
 			<div class="row justify-content-end">
