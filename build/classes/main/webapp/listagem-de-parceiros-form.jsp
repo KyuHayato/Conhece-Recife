@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
+<%@page import="DAO.PartnerDAO"%>
+<%@page import="model.Partner"%>
+<%@page import="java.util.ArrayList"%>
 <html lang="en">
 
 <head>
@@ -52,44 +55,36 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
+					<%
+					PartnerDAO dados1 = new PartnerDAO();
+					ArrayList<Partner> list = dados1.selectPartner();
 
-							<td width="200" height="40"></td>
-							<td width="200" height="40"></td>
-							<td width="200" height="40"></td>
-							<td width="200" height="40"></td>
-							<td width="200" height="40"></td>
+					for (Partner partner : list) {
+						out.print(" <tr>");
+						out.print("<td>" + partner.getPartnerName() + "</td>");
+						out.print("<td>" + partner.getCity() + "</td>");
+						out.print("<td>" + partner.getState() + "</td>");
+						out.print("<td>" + partner.getDistrict() + "</td>");
+						out.print("<td>" + partner.getNumber() + "</td>");
 
-							<td width="160" height="40">
-								<div class="row justify-content-left">
-									<div class="col-4">
-										<button type="button" class="btn button-home radius pt-2"
-											style="background-color: green; height: 40px;">
-											<a href=""
-												style="color: white; font-weight: strong; text-decoration: none;">Alterar</a>
-										</button>
-									</div>
-								</div>
-							</td>
+						out.print("<td>");
+						out.print(
+						"<button type='button' class='btn button-home radius pt-2' style='background-color: green; height:40px;'>");
+						out.print("<a href='#' style='color: white; font-weight: strong; text-decoration: none; '>Atualizar</a></button>");
+						out.print("</td>");
 
-							<td width="160" height="40">
-								<div class="row justify-content-left">
-									<div class="col-4">
-										<button type="button" class="btn button-home radius pt-2"
-											style="background-color: red; height: 40px;">
-											<a href=""
-												style="color: white; font-weight: strong; text-decoration: none;">Excluir</a>
-										</button>
-									</div>
-								</div>
-							</td>
+						out.print("<td>");
+						out.print("<button type='button' class='btn button-home radius pt-2' style='background-color: red; height:40px;'>");
+						out.print("<a href='#' style='color: white; font-weight: strong; text-decoration: none; '>Excluir</a></button>");
+						out.print("</td>");
 
-						</tr>
+						out.print(" </tr>");
+
+					}
+					%>
 
 					</tbody>
 				</table>
-				
-				
 			</div>
 				<div class="row justify-content-center">
 					<div class="col-4">
