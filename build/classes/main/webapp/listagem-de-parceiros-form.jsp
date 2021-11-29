@@ -34,10 +34,10 @@
 			<div class="row justify-content-center">
 				<div class="col--lg-12 mb-4">
 					<h1 class="label-disabled"
-						style="font-family: Fjalla One; font-size: 75px;">LISTAR
+						style="font-family: Fjalla One; font-size: 75px;">
 						PARCEIROS</h1>
 					<h1 class="text-center"
-						style="font-family: Fjalla One; font-size: 50px;">LISTAR
+						style="font-family: Fjalla One; font-size: 50px;">
 						PARCEIROS</h1>
 				</div>
 			</div>
