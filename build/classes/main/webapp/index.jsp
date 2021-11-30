@@ -53,12 +53,12 @@
 											aria-labelledby="navbarDropdownMenuLink"
 											style="background-color: #343a40;">
 											<%
-											PlaceDAO dados1 = new PlaceDAO();
-											ArrayList<Place> lista = dados1.selectPlace();
+		PlaceDAO dados1 = new PlaceDAO();
+	ArrayList<Place> lista = dados1.selectPlace();
 						
-											for (Place place : lista) {
-											out.print("<a class='dropdown-item button-dropdown text-center'href='exibir-lugar.jsp?id="+place.getId()+"'>"+ place.getName() +" </a>");	
-											}
+		for (Place place : lista) {
+				out.print("<a class='dropdown-item button-dropdown text-center'href='exibir-lugar.jsp?id="+place.getId()+"'>"+ place.getName() +" </a>");	
+		}
 											%>
 											
 										</div>
