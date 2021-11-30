@@ -34,66 +34,64 @@
 			<div class="row justify-content-center">
 				<div class="col--lg-12 mb-4">
 					<h1 class="label-disabled"
-						style="font-family: Fjalla One; font-size: 75px;">
-						PARCEIROS</h1>
+						style="font-family: Fjalla One; font-size: 75px;">PARCEIROS</h1>
 					<h1 class="text-center"
-						style="font-family: Fjalla One; font-size: 50px;">
-						PARCEIROS</h1>
+						style="font-family: Fjalla One; font-size: 50px;">PARCEIROS</h1>
 				</div>
 			</div>
 			<div class="container">
 				<table width="1200" border="1px">
 					<thead>
 						<tr>
-
 							<th width="330" height="40" bgcolor="#CCC">NOME DO PARCEIRO</th>
 							<th width="200" height="40" bgcolor="#CCC">CATEGORIA</th>
 							<th width="200" height="40" bgcolor="#CCC">CIDADE</th>
 							<th width="200" height="40" bgcolor="#CCC">BAIRRO</th>
 							<th width="200" height="40" bgcolor="#CCC">ESTADO</th>
-
+							<th width="200" height="40" bgcolor="#CCC">...</th>
+							<th width="200" height="40" bgcolor="#CCC">...</th>
 						</tr>
 					</thead>
 					<tbody>
-					<%
-					PartnerDAO dados1 = new PartnerDAO();
-					ArrayList<Partner> list = dados1.selectPartner();
+						<%
+						PartnerDAO dados1 = new PartnerDAO();
+						ArrayList<Partner> list = dados1.selectPartner();
 
-					for (Partner partner : list) {
-						out.print(" <tr>");
-						out.print("<td>" + partner.getPartnerName() + "</td>");
-						out.print("<td>" + partner.getCity() + "</td>");
-						out.print("<td>" + partner.getState() + "</td>");
-						out.print("<td>" + partner.getDistrict() + "</td>");
-						out.print("<td>" + partner.getNumber() + "</td>");
+						for (Partner partner : list) {
+							out.print(" <tr>");
+							out.print("<td>" + partner.getPartnerName() + "</td>");
+							out.print("<td>" + partner.getCity() + "</td>");
+							out.print("<td>" + partner.getState() + "</td>");
+							out.print("<td>" + partner.getDistrict() + "</td>");
+							out.print("<td>" + partner.getNumber() + "</td>");
 
-						out.print("<td>");
-						out.print(
-						"<button type='button' class='btn button-home radius pt-2' style='background-color: green; height:40px;'>");
-						out.print("<a href='#' style='color: white; font-weight: strong; text-decoration: none; '>Atualizar</a></button>");
-						out.print("</td>");
+							out.print("<td>");
+							out.print(
+							"<button type='button' class='btn button-home radius pt-2' style='background-color: green; height:40px;'>");
+							out.print("<a href='#' style='color: white; font-weight: strong; text-decoration: none; '>Atualizar</a></button>");
+							out.print("</td>");
 
-						out.print("<td>");
-						out.print("<button type='button' class='btn button-home radius pt-2' style='background-color: red; height:40px;'>");
-						out.print("<a href='#' style='color: white; font-weight: strong; text-decoration: none; '>Excluir</a></button>");
-						out.print("</td>");
+							out.print("<td>");
+							out.print("<button type='button' class='btn button-home radius pt-2' style='background-color: red; height:40px;'>");
+							out.print("<a href='#' style='color: white; font-weight: strong; text-decoration: none; '>Excluir</a></button>");
+							out.print("</td>");
 
-						out.print(" </tr>");
+							out.print(" </tr>");
 
-					}
-					%>
+						}
+						%>
 
 					</tbody>
 				</table>
 			</div>
-				<div class="row justify-content-center">
-					<div class="col-4">
-						<button type="button" class="btn button-home radius mt-4">
-							<a href="listagem-administrador.jsp" style="color: black; text-decoration: none;">
-								< Home</a>
-						</button>
-					</div>
+			<div class="row justify-content-center">
+				<div class="col-4">
+					<button type="button" class="btn button-home radius mt-4">
+						<a href="listagem-administrador.jsp"
+							style="color: black; text-decoration: none;"> < Home</a>
+					</button>
 				</div>
+			</div>
 			<footer>
 				<div class="row justify-content-end">
 					<div class="col-6">

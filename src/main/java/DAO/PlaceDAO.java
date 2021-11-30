@@ -17,20 +17,22 @@ public class PlaceDAO {
 	private static String BANCO_DE_DADOS = "conhece_recife";
 	private static String PORTA_BANCO = "3306";
 	private static String USUARIO = "root";
-	private static String SENHA = "Rocklee767"; //Lembre sempre de colocar sua senha
+	private static String SENHA = "Rocklee767"; // Lembre sempre de colocar sua senha
 
-	//AQUI É ONDE RECEBE OS DADOS INSERIDOS DAS PAGINAS RESPONSAVEIS POR ELES, COMO TesteCupomCrud.java E OU processaNovoLugar.jsp , mandando os dados para o banco. 
-	
-	/*RESUMO: place é a classe de lugares
-		  processaNovoLugar.jsp e TesteCupomCrud.java , sao as classes que recebem os dados e enviam para o crud
-		  CRUD_place recebe os dados e envia para o banco	*/
-	
-	
-	
+	// AQUI É ONDE RECEBE OS DADOS INSERIDOS DAS PAGINAS RESPONSAVEIS POR ELES, COMO
+	// TesteCupomCrud.java E OU processaNovoLugar.jsp , mandando os dados para o
+	// banco.
+
+	/*
+	 * RESUMO: place é a classe de lugares processaNovoLugar.jsp e
+	 * TesteCupomCrud.java , sao as classes que recebem os dados e enviam para o
+	 * crud CRUD_place recebe os dados e envia para o banco
+	 */
+
 	private void abrirConexao() {
 		try {
 			Class.forName(DRIVER_MYSQL).newInstance();
-		
+
 			String url = "jdbc:mysql://" + LOCAL_SERVIDOR + ":" + PORTA_BANCO + "/" + BANCO_DE_DADOS;
 			this.conn = (Connection) DriverManager.getConnection(url, USUARIO, SENHA);
 
@@ -48,7 +50,7 @@ public class PlaceDAO {
 			System.out.println(e.getMessage());
 		}
 	}
-	
+
 	public void addPlace(Place place) throws SQLException, Exception {
 
 		String sql = "INSERT INTO lugar ( nome, descricao, cidade, rua, complemento, cep, bairro, estado, numero)";
@@ -74,39 +76,82 @@ public class PlaceDAO {
 
 		this.fecharConexao();
 	}
-	  public void removePlace(Place place) throws SQLException, Exception {
-	      
-	        String sql = "DELETE FROM lugar WHERE id_lugar = ? ";
-	        this.abrirConexao();
-	        //preparando a instrução
-	        PreparedStatement preparedStatement = this.conn.prepareStatement(sql);
-	       
-	        preparedStatement.setInt(1, place.getId());
-	       
-	        preparedStatement.executeUpdate();
-	       
-	        this.fecharConexao();
-	    }
- public ArrayList<Place> selectPlace() throws Exception {
-		  
-		  ArrayList<Place> listPlace = new ArrayList<>();
-		  String sql = "select place.nome, place.cidade, place.estado, place.bairro, place.numero " ;
-		  sql+=" from lugar as place";
-		  this.abrirConexao();
-		  PreparedStatement preparedStatement =this.conn.prepareStatement(sql);
-		  ResultSet resultReader = preparedStatement.executeQuery();
-		  
-		 while (resultReader.next()) {
+
+	public void removePlace(Place place) throws SQLException, Exception {
+
+		String sql = "DELETE FROM lugar WHERE id_lugar = ? ";
+		this.abrirConexao();
+		// preparando a instrução
+		PreparedStatement preparedStatement = this.conn.prepareStatement(sql);
+
+		preparedStatement.setInt(1, place.getId());
+
+		preparedStatement.executeUpdate();
+
+		this.fecharConexao();
+	}
+
+	public ArrayList<Place> selectPlace() throws Exception {
+
+		ArrayList<Place> listPlace = new ArrayList<>();
+		
+		
+		
+		String sql = " SELECT lugar.id_lugar,lugar.nome,lugar.descricao,lugar.cidade,lugar.rua, ";
+		sql += " lugar.complemento,lugar.cep,lugar.bairro,lugar.estado,lugar.numero ";
+		sql += " FROM lugar ";
+		sql += " ORDER BY lugar.nome ";
+		this.abrirConexao();
+		PreparedStatement preparedStatement = this.conn.prepareStatement(sql);
+		ResultSet resultReader = preparedStatement.executeQuery();
+
+		while (resultReader.next()) {
 			Place place = new Place();
+			place.setId(resultReader.getInt("id_lugar"));
 			place.setName(resultReader.getString("nome"));
 			place.setCity(resultReader.getString("cidade"));
 			place.setState(resultReader.getString("estado"));
 			place.setDistrict(resultReader.getString("bairro"));
-			place.setNumber(resultReader.getInt("Numero"));
+			place.setNumber(resultReader.getInt("numero"));
+			place.setDescription(resultReader.getString("descricao"));
+			place.setRoad(resultReader.getString("rua"));
+			place.setComplement(resultReader.getString("complemento"));
+			place.setCep(resultReader.getInt("cep"));
 			listPlace.add(place);
-		  }
-		 this.fecharConexao();
+		}
+		this.fecharConexao();
 		return listPlace;
-		   
-	  }
+
+	}
+
+	public Place getPlace(int id) throws Exception {
+		Place place = new Place();
+		String sql = "SELECT lugar.id_lugar,lugar.nome,lugar.descricao,lugar.cidade,lugar.rua, ";
+		sql += "lugar.complemento,lugar.cep,lugar.bairro,lugar.estado,lugar.numero ";
+		sql += "FROM lugar";
+		sql += " WHERE lugar.id_lugar = ?";
+		this.abrirConexao();
+		PreparedStatement preparedStatement = this.conn.prepareStatement(sql);
+	
+		preparedStatement.setInt(1,id);
+		ResultSet resultReader = preparedStatement.executeQuery();
+
+		while (resultReader.next()) {
+			place.setId(resultReader.getInt("id_lugar"));
+			place.setName(resultReader.getString("nome"));
+			place.setCity(resultReader.getString("cidade"));
+			place.setState(resultReader.getString("estado"));
+			place.setDistrict(resultReader.getString("bairro"));
+			place.setNumber(resultReader.getInt("numero"));
+			place.setDescription(resultReader.getString("descricao"));
+			place.setRoad(resultReader.getString("rua"));
+			place.setComplement(resultReader.getString("complemento"));
+			place.setCep(resultReader.getInt("cep"));
+			
+			
+		}
+		this.fecharConexao();
+		return place;
+
+	}
 }
