@@ -12,7 +12,7 @@ public class TesteParnerCrud {
 		try {
 			
 			Partner partner = new Partner();
-			/*
+			
 			partner.setPartnerName("SeringaX1");
 			partner.setCategory("Teste");
 			partner.setCity("Recife");
@@ -24,10 +24,10 @@ public class TesteParnerCrud {
 			partner.setNumber(76767);
 			partner.setPhoneNumber(1232334323);
 			
-			*/
+			
 			//partner.setId(2);
 			PartnerDAO dados1 = new PartnerDAO();
-			dados1.selectPartner();
+			dados1.addPartner(partner);
 			
 			System.out.println("executado com sucesso");
 		}catch(Exception ex){

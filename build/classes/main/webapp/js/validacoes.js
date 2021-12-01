@@ -66,7 +66,6 @@ function validateFormRegisterPlace() {
 }
 
 function validateFormRegisterPartner() {
-
 	if (document.querySelector("#partnerName").value == "" ||
 		document.querySelector("#partnerName").value.length < 3) {
 
@@ -90,8 +89,7 @@ function validateFormRegisterPartner() {
 		document.querySelector("#errorPartnerRoad").style.display = "none"
 	}
 
-	if (document.querySelector("#numberPartner").value == "" ||
-		document.querySelector("#numberPartner").value.length > 11) {
+	if (document.querySelector("#numberPartner").value == "") {
 
 		document.querySelector("#errorNumberPartner").style.display = "block"
 
@@ -124,10 +122,18 @@ function validateFormRegisterPartner() {
 	} else {
 		document.querySelector("#errorStatePartner").style.display = "none"
 	}
-	if (document.querySelector('#categoryPartner').selectedIndex == 0) {
+	if (document.querySelector('#categoryPartner').value == "") {
 		document.querySelector("#errorCategoryPartner").style.display = "block"
+		
 	} else {
 		document.querySelector("#errorCategoryPartner").style.display = "none"
+	}
+	if (document.querySelector("#phoneNumber").value == "") {
+
+		document.querySelector("#errorPhoneNumber").style.display = "block"
+
+	} else {
+		document.querySelector("#errorPhoneNumber").style.display = "none"
 	}
 }
 

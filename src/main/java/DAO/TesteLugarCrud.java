@@ -26,7 +26,7 @@ public class TesteLugarCrud {
 			
 			
 			//manda os dados do objeto lugar para o objeto dados
-			PlacesDAO dados1 = new PlacesDAO();
+			PlaceDAO dados1 = new PlaceDAO();
 			dados1.addPlace(lugar);
 			
 			System.out.println("executado com sucesso");

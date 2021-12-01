@@ -5,6 +5,10 @@
 
 <%@page import="DAO.PartnerDAO" %>
 <html>
+<head>
+<meta charset="ISO-8859-1">
+
+</head>
 <body>
 <%
 
@@ -19,6 +23,7 @@ try {
 	String statePartner = request.getParameter("statePartner");
 	String cityPartner = request.getParameter("cityPartner");
 	String districtPartner = request.getParameter("districtPartner");
+	String phoneNumber = request.getParameter("phoneNumber");
 
 	//pega o parametro recebido acima e envia para o banco
 	Partner partner = new Partner();
@@ -31,12 +36,14 @@ try {
 	partner.setDistrict(districtPartner);
 	partner.setState(statePartner);
 	partner.setNumber(Integer.parseInt(numberPartner));
+	partner.setPhoneNumber(Integer.parseInt(phoneNumber));
 	
 	PartnerDAO dados1 = new PartnerDAO();
 	dados1.addPartner(partner);
 	
 	System.out.println("executado com sucesso");
-	response.sendRedirect("../listagem-de-parceiro-form.jsp");
+	response.sendRedirect("../listagem-de-parceiros-form.jsp");
+	
 }catch(Exception ex){
 	System.out.println(ex .getMessage());
 }

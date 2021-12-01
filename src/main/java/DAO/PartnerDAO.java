@@ -43,12 +43,11 @@ public class PartnerDAO {
 	}
 
 	public void addPartner(Partner partner) throws SQLException, Exception {
-
+		
 		String sql = "INSERT INTO parceiro ( nome, categoria, cidade, estado, rua, complemento, cep, bairro, numero, telefone)";
-
-		sql += "VALUES (?,?,?,?,?,?,?,?,?,?)";
+				sql += "VALUES (?,?,?,?,?,?,?,?,?,?)";
 		this.abrirConexao();
-
+		
 		PreparedStatement preparedStatement = this.conn.prepareStatement(sql);
 
 		preparedStatement.setString(1, partner.getPartnerName());
@@ -62,7 +61,7 @@ public class PartnerDAO {
 		preparedStatement.setInt(9, partner.getNumber());
 		preparedStatement.setInt(10, partner.getPhoneNumber());
 		preparedStatement.executeUpdate();
-
+		
 		this.fecharConexao();
 	}
 

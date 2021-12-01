@@ -40,7 +40,7 @@
                 <img src=images/bolas-design.png
                     style="position: absolute;width: 133.5px;height: 135px;top: 260px;right:330px;left:0,8px;">
             </div>
-            <form method="POST">
+            <form action="controller/controllerPartner.jsp" class="form">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class=" border border-dark p-4 radius" style="background: rgba(255, 247, 206, 0.33);">
@@ -57,16 +57,11 @@
                                 </div>
                                 <div class="col">
                                     <div class="form-group radius">
-                                        <select class="form-control radius input-form p-2" name="categoryPartner"
-                                            id="categoryPartner">
-                                            <option value="0">Categoria</option>
-                                            <option value="1">Lanche</option>
-                                            <option value="2">Exemplo</option>
-                                            <option value="3">Recursos</option>
-                                        </select>
+                                           <input type="text" class="form-control radius input-form p-2"
+                                            placeholder="Categoria" name="categoryPartner" id="categoryPartner">
                                         <div>
                                             <span class="style-error" id="errorCategoryPartner"
-                                                style="display: none;">Selecione uma Categoria</span>
+                                                style="display: none;">Digite uma categoria</span>
                                         </div>
                                     </div>
                                 </div>
@@ -84,7 +79,7 @@
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" class="form-control radius input-form" placeholder="Número"
+                                        <input type="number" class="form-control radius input-form" placeholder="Número"
                                             name="numberPartner" id="numberPartner">
                                         <div>
                                             <span class="style-error" id="errorNumberPartner"
@@ -98,7 +93,7 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" class="form-control radius input-form" placeholder="Cep"
+                                        <input type="number" class="form-control radius input-form" placeholder="Cep"
                                             name="cepPartner" id="cepPartner">
                                         <div>
                                             <span class="style-error" id="errorCepPartner" style="display: none;">CEP
@@ -143,7 +138,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col">
                                     <div class="form-group">
                                         <input type="text" class="form-control radius input-form" placeholder="Bairro"
                                             name="districtPartner" id="districtPartner">
@@ -151,6 +146,17 @@
                                             <span class="style-error" id="errorDistrictPartner"
                                                 style="display: none;">Bairro
                                                 invalido, insira os dados de forma correta</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="col">
+                                    <div class="form-group">
+                                        <input type="number" class="form-control radius input-form" placeholder="Telefone"
+                                            name="phoneNumber" id="phoneNumber">
+                                        <div>
+                                            <span class="style-error" id="errorPhoneNumber"
+                                                style="display: none;">Numero de telefone invalido
+                                                invalido</span>
                                         </div>
                                     </div>
                                 </div>
