@@ -56,7 +56,6 @@
 						<%
 						PartnerDAO dados1 = new PartnerDAO();
 						ArrayList<Partner> list = dados1.selectPartner();
-
 						for (Partner partner : list) {
 							out.print(" <tr>");
 							out.print("<td>" + partner.getPartnerName() + "</td>");
@@ -64,20 +63,16 @@
 							out.print("<td>" + partner.getState() + "</td>");
 							out.print("<td>" + partner.getDistrict() + "</td>");
 							out.print("<td>" + partner.getNumber() + "</td>");
-
 							out.print("<td>");
 							out.print(
 							"<button type='button' class='btn button-home radius pt-2' style='background-color: green; height:40px;'>");
 							out.print("<a href='#' style='color: white; font-weight: strong; text-decoration: none; '>Atualizar</a></button>");
 							out.print("</td>");
-
 							out.print("<td>");
 							out.print("<button type='button' class='btn button-home radius pt-2' style='background-color: red; height:40px;'>");
 							out.print("<a href='#' style='color: white; font-weight: strong; text-decoration: none; '>Excluir</a></button>");
 							out.print("</td>");
-
 							out.print(" </tr>");
-
 						}
 						%>
 

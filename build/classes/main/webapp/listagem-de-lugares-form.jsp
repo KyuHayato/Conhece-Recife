@@ -54,7 +54,6 @@
 					<%
 					PlaceDAO dados1 = new PlaceDAO();
 					ArrayList<Place> lista = dados1.selectPlace();
-
 					for (Place place : lista) {
 						out.print(" <tr>");
 						out.print("<td>" + place.getName() + "</td>");
@@ -62,20 +61,16 @@
 						out.print("<td>" + place.getState() + "</td>");
 						out.print("<td>" + place.getDistrict() + "</td>");
 						out.print("<td>" + place.getNumber() + "</td>");
-
 						out.print("<td>");
 						out.print(
 						"<button type='button' class='btn button-home radius pt-2' style='background-color: green; height:40px;'>");
 						out.print("<a href='#' style='color: white; font-weight: strong; text-decoration: none; '>Atualizar</a></button>");
 						out.print("</td>");
-
 						out.print("<td>");
 						out.print("<button type='button' class='btn button-home radius pt-2' style='background-color: red; height:40px;'>");
 						out.print("<a href='#' style='color: white; font-weight: strong; text-decoration: none; '>Excluir</a></button>");
 						out.print("</td>");
-
 						out.print(" </tr>");
-
 					}
 					%>
 				</tbody>
