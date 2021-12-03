@@ -9,8 +9,7 @@
 
 <head>
 <meta charset="ISO-8859-1">
-<title>Inserir Lugar</title>
-
+<title> Update lugar</title>
 </head>
 
 <body>
@@ -41,7 +40,7 @@ try {
 	lugar.setNumber(Integer.parseInt(numberPlace));
 	
 	PlaceDAO dados1 = new PlaceDAO();
-	dados1.addPlace(lugar);
+	dados1.update(lugar);
 	
 	System.out.println("executado com sucesso");
 	response.sendRedirect("../listagem-de-lugares-form.jsp");

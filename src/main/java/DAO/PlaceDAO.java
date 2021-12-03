@@ -50,8 +50,30 @@ public class PlaceDAO {
 			System.out.println(e.getMessage());
 		}
 	}
+	public void update(Place place) throws SQLException, Exception {
+		String sql = "UPDATE lugar SET nome = ?, descricao = ?, cidade = ?, rua = ?, complemento = ?, cep = ?, bairro = ?, estado = ?, numero = ? ";
+		this.abrirConexao();
+		PreparedStatement preparedStatement = this.conn.prepareStatement(sql);
+		preparedStatement.setString(1, place.getName());
+		preparedStatement.setString(2, place.getDescription());
+		preparedStatement.setString(3, place.getCity());
+		preparedStatement.setString(4, place.getRoad());
+		preparedStatement.setString(5, place.getComplement());
+		preparedStatement.setInt(6, place.getCep());
+		preparedStatement.setString(7, place.getDistrict());
+		preparedStatement.setString(8, place.getState());
+		preparedStatement.setInt(9, place.getNumber());
 
-	public void addPlace(Place place) throws SQLException, Exception {
+		// execute insert SQL stetement
+		preparedStatement.executeUpdate();
+
+		this.fecharConexao();
+	
+
+		
+	}
+
+public void addPlace(Place place) throws SQLException, Exception {
 
 		String sql = "INSERT INTO lugar ( nome, descricao, cidade, rua, complemento, cep, bairro, estado, numero)";
 
@@ -125,6 +147,7 @@ public class PlaceDAO {
 	}
 
 	public Place getPlace(int id) throws Exception {
+
 		Place place = new Place();
 		String sql = "SELECT lugar.id_lugar,lugar.nome,lugar.descricao,lugar.cidade,lugar.rua, ";
 		sql += "lugar.complemento,lugar.cep,lugar.bairro,lugar.estado,lugar.numero ";
@@ -154,4 +177,40 @@ public class PlaceDAO {
 		return place;
 
 	}
+	
+	//teste alterar
+	public Place getPlace2(int id) throws Exception {
+
+		Place retorno = new Place();
+		
+		String sql = "SELECT lugar.id_lugar,lugar.nome,lugar.descricao,lugar.cidade,lugar.rua, ";
+		sql += "lugar.complemento,lugar.cep,lugar.bairro,lugar.estado,lugar.numero ";
+		sql += "FROM lugar";
+		sql += " WHERE lugar.id_lugar = " + id ;
+		this.abrirConexao();
+		PreparedStatement preparedStatement = this.conn.prepareStatement(sql);
+	
+		preparedStatement.setInt(1,id);
+		ResultSet resultReader = preparedStatement.executeQuery();
+
+		while (resultReader.next()) {
+			retorno.setId(resultReader.getInt("id_lugar"));
+			retorno.setName(resultReader.getString("nome"));
+			retorno.setCity(resultReader.getString("cidade"));
+			retorno.setState(resultReader.getString("estado"));
+			retorno.setDistrict(resultReader.getString("bairro"));
+			retorno.setNumber(resultReader.getInt("numero"));
+			retorno.setDescription(resultReader.getString("descricao"));
+			retorno.setRoad(resultReader.getString("rua"));
+			retorno.setComplement(resultReader.getString("complemento"));
+			retorno.setCep(resultReader.getInt("cep"));
+			
+			
+		}
+		this.fecharConexao();
+		return retorno;
+
+	}
+	
+	
 }
