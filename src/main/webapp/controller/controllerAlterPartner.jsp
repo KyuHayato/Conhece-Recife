@@ -39,7 +39,7 @@ try {
 	partner.setPhoneNumber(Integer.parseInt(phoneNumber));
 	
 	PartnerDAO dados1 = new PartnerDAO();
-	dados1.updatePartner(partner);
+	dados1.addPartner(partner);
 	
 	System.out.println("executado com sucesso");
 	response.sendRedirect("../listagem-de-parceiros-form.jsp");

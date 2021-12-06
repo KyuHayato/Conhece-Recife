@@ -50,8 +50,9 @@ public class PlaceDAO {
 			System.out.println(e.getMessage());
 		}
 	}
+
 	public void update(Place place) throws SQLException, Exception {
-		String sql = "UPDATE lugar SET nome = ?, descricao = ?, cidade = ?, rua = ?, complemento = ?, cep = ?, bairro = ?, estado = ?, numero = ? ";
+		String sql = " UPDATE lugar SET nome = ?, descricao = ?, cidade = ?, rua = ?, complemento = ?, cep = ?, bairro = ?, estado = ?, numero = ? WHERE id_lugar = ? ";
 		this.abrirConexao();
 		PreparedStatement preparedStatement = this.conn.prepareStatement(sql);
 		preparedStatement.setString(1, place.getName());
@@ -68,12 +69,10 @@ public class PlaceDAO {
 		preparedStatement.executeUpdate();
 
 		this.fecharConexao();
-	
 
-		
 	}
 
-public void addPlace(Place place) throws SQLException, Exception {
+	public void addPlace(Place place) throws SQLException, Exception {
 
 		String sql = "INSERT INTO lugar ( nome, descricao, cidade, rua, complemento, cep, bairro, estado, numero)";
 
@@ -116,9 +115,7 @@ public void addPlace(Place place) throws SQLException, Exception {
 	public ArrayList<Place> selectPlace() throws Exception {
 
 		ArrayList<Place> listPlace = new ArrayList<>();
-		
-		
-		
+
 		String sql = " SELECT lugar.id_lugar,lugar.nome,lugar.descricao,lugar.cidade,lugar.rua, ";
 		sql += " lugar.complemento,lugar.cep,lugar.bairro,lugar.estado,lugar.numero ";
 		sql += " FROM lugar ";
@@ -155,8 +152,8 @@ public void addPlace(Place place) throws SQLException, Exception {
 		sql += " WHERE lugar.id_lugar = ?";
 		this.abrirConexao();
 		PreparedStatement preparedStatement = this.conn.prepareStatement(sql);
-	
-		preparedStatement.setInt(1,id);
+
+		preparedStatement.setInt(1, id);
 		ResultSet resultReader = preparedStatement.executeQuery();
 
 		while (resultReader.next()) {
@@ -170,27 +167,26 @@ public void addPlace(Place place) throws SQLException, Exception {
 			place.setRoad(resultReader.getString("rua"));
 			place.setComplement(resultReader.getString("complemento"));
 			place.setCep(resultReader.getInt("cep"));
-			
-			
+
 		}
 		this.fecharConexao();
 		return place;
 
 	}
-	
-	//teste alterar
+
+	// teste alterar
 	public Place getPlace2(int id) throws Exception {
 
 		Place retorno = new Place();
-		
+
 		String sql = "SELECT lugar.id_lugar,lugar.nome,lugar.descricao,lugar.cidade,lugar.rua, ";
 		sql += "lugar.complemento,lugar.cep,lugar.bairro,lugar.estado,lugar.numero ";
 		sql += "FROM lugar";
-		sql += " WHERE lugar.id_lugar = " + id ;
+		sql += " WHERE lugar.id_lugar = ?";
 		this.abrirConexao();
 		PreparedStatement preparedStatement = this.conn.prepareStatement(sql);
-	
-		preparedStatement.setInt(1,id);
+
+		preparedStatement.setInt(1, id);
 		ResultSet resultReader = preparedStatement.executeQuery();
 
 		while (resultReader.next()) {
@@ -204,13 +200,11 @@ public void addPlace(Place place) throws SQLException, Exception {
 			retorno.setRoad(resultReader.getString("rua"));
 			retorno.setComplement(resultReader.getString("complemento"));
 			retorno.setCep(resultReader.getInt("cep"));
-			
-			
+
 		}
 		this.fecharConexao();
 		return retorno;
 
 	}
-	
-	
+
 }

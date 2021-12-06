@@ -12,7 +12,7 @@
 <body>
 <%
 
-try {
+try {	
 	//aqui recebe os inputs do formulario lugares
 	String namePartner = request.getParameter("partnerName");
 	String categoryPartner = request.getParameter("categoryPartner");
@@ -39,7 +39,7 @@ try {
 	partner.setPhoneNumber(Integer.parseInt(phoneNumber));
 	
 	PartnerDAO dados1 = new PartnerDAO();
-	dados1.addPartner(partner);
+	dados1.updatePartner(partner);
 	
 	System.out.println("executado com sucesso");
 	response.sendRedirect("../listagem-de-parceiros-form.jsp");

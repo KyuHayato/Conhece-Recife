@@ -13,6 +13,12 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/style.css">
 <title>Conhece Recife - Exibir Lugares</title>
 </head>
@@ -62,8 +68,10 @@
 						out.print("<td>" + place.getDistrict() + "</td>");
 						out.print("<td>" + place.getNumber() + "</td>");
 						out.print("<td>");
-						out.print("<button type='button' class='btn button-home radius pt-2' style='background-color: green; height:40px;'>");
-						out.print("<a href='alterarLugares-form.jsp?Name="+place.getName()+"' style='color: white; font-weight: strong; text-decoration: none; '>Atualizar</a></button>");
+						out.print(
+						"<button type='button' class='btn button-home radius pt-2' style='background-color: green; height:40px;'>");
+						out.print("<a href='alterarLugares-form.jsp?id=" + place.getId()
+						+ "' style='color: white; font-weight: strong; text-decoration: none; '>Atualizar</a></button>");
 						out.print("</td>");
 						out.print("<td>");
 						out.print("<button type='button' class='btn button-home radius pt-2' style='background-color: red; height:40px;'>");
@@ -74,12 +82,12 @@
 					%>
 				</tbody>
 			</table>
-			
+
 			<div class="row justify-content-center">
 				<div class="col-4">
 					<button type="button" class="btn button-home radius mt-4">
-						<a href="listagem-administrador.jsp" style="color: black; text-decoration: none;">
-							< Home</a>
+						<a href="listagem-administrador.jsp"
+							style="color: black; text-decoration: none;"> < Home</a>
 					</button>
 				</div>
 			</div>

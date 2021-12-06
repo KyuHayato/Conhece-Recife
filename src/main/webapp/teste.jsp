@@ -4,7 +4,6 @@
 <%@page import="DAO.PartnerDAO"%>
 <%@page import="model.Partner"%>
 <%@page import="java.util.ArrayList"%>
-
 <html>
 <head>
 <meta charset="UTF-8">
@@ -14,18 +13,10 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	crossorigin="anonymous">
-	<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/style.css">
 <title>Conhece Recife - Listar Parceiros</title>
 </head>
 <body>
-
-
 	<header>
 		<div>
 			<img src="images/rectangle_54.png" alt="retangulo2"
@@ -60,10 +51,8 @@
 				</thead>
 				<tbody>
 					<%
-					
 					PartnerDAO dados1 = new PartnerDAO();
 					ArrayList<Partner> list = dados1.selectPartner();
-				
 					for (Partner partner : list) {
 						out.print(" <tr>");
 						out.print("<td>" + partner.getPartnerName() + "</td>");
@@ -73,14 +62,12 @@
 						out.print("<td>" + partner.getNumber() + "</td>");
 						out.print("<td>");
 						out.print(
-						"<a class='btn button-home radius pt-2 text-light' style='background-color: green; height:40px;' href='listagem-atualiza-parceiros-form.jsp?id=" + partner.getId() + "'>");
-						out.print("Atualizar</a>");
+						"<button type='button' class='btn button-home radius pt-2 text-light' style='background-color: green; height:40px;' data-toggle='modal' data-target='#alterPartnerModal'>");
+						out.print("Atualizar</button>");
 						out.print("</td>");
 						out.print("<td>");
 						out.print("<button type='button' class='btn button-home radius pt-2' style='background-color: red; height:40px;'>");
-						out.print(
-						"<a href='#' style='color: white; font-weight: strong; text-decoration: none;' onclick='abrirMensagemRemocao("
-								+ partner.getId() + ")');>Excluir</a></button>");
+						out.print("<a href='#' style='color: white; font-weight: strong; text-decoration: none; '>Excluir</a></button>");
 						out.print("</td>");
 						out.print(" </tr>");
 
@@ -254,54 +241,26 @@
 							</div>
 						</div>
 						<div class="row justify-content-end">
-							<button type="button" class="btn btn-secondary radius mr-2 mt-3"
-								data-dismiss="modal">Sair</button>
-							<button type="submit" class="btn btn-dark radius mt-3"
-								onclick="validateFormRegisterPartner(this)">Atualizar</button>
-						</div>
+                            <button type="button" class="btn btn-secondary radius mr-2 mt-3" data-dismiss="modal">Sair</button>
+                            <button type="submit" class="btn btn-dark radius mt-3"
+                                onclick="validateFormRegisterPartner(this)">Atualizar</button>
+                        </div>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<div class="modal fade" id="myModal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<!-- Modal Header -->
-				<div class="modal-header">
-					<h4 class="modal-title">Atenção</h4>
-					<button type="button" class="close" data-dismiss="modal">×</button>
-				</div>
-				<!-- Modal body -->
-				<div class="modal-body">Deseja realmente remover o aluno?</div>
-				<!-- Modal footer -->
-				<div class="modal-footer">
-					<button type="button" class="btn btn-danger"
-						onclick="deletePartner();">Remover</button>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
 </body>
-<script>
-	$(document).ready(
-			function() {
-				let selectID;
-				console.log(selectID);
-				abrirMensagemRemocao = function(id) {
-					console.log("entrou e esse", id);
-					selectID = id;
-					$("#myModal").modal();
-				}
-				deletePartner = function(id) {
-					window.location.href = "controller/controllerDeletePartner.jsp?id="
-							+ selectID;
-				}
 
-			});
-</script>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+	integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+	integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	crossorigin="anonymous"></script>
 </html>

@@ -22,7 +22,7 @@
 
 <%
 PlaceDAO dados1 = new PlaceDAO();
-String id=request.getParameter("id_Lugar");
+String id=request.getParameter("id");
 Place place2 =dados1.getPlace2(Integer.parseInt(id));
 
 
@@ -64,15 +64,13 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 								<div class="col">
 									<div class="form-group">
 										<input readonly="true" type="text" class="form-control radius input-form"
-											placeholder="Nome" name="namePlace" id="namePlace"
+											placeholder="Nome" name="idPlace" id="idPlace"
 											onchange="validateNamePlace(this)"
 											
-											value="<%place2.getId(); %>" >
+											value="<%=place2.getId() %>" >
 										
 										<div>
-											<span class="style-error" id="errorNamePlace"
-												style="display: none;">Nome invalido, insira os dados
-												de forma correta</span>
+										
 										</div>
 									</div>
 								</div>
@@ -80,7 +78,7 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 								<div class="col-6">
 									<div class="form-group">
 										<input type="text" class="form-control radius input-form"
-											placeholder="Bairro" name="districtPlace" id="districtPlace" value="<%place2.getName(); %>">
+											placeholder="Bairro" name="namePlace" id="namePlace" value="<%=place2.getName() %>">
 										<div>
 											<span class="style-error" id="errorDistrictPlace"
 												style="display: none;">Bairro invalido, insira os
@@ -93,7 +91,7 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 								<div class="col">
 									<div class="form-group">
 										<input type="text" class="form-control radius input-form"
-											placeholder="Rua" name="placeRoad" id="placeRoad" value="<%place2.getRoad(); %>">
+											placeholder="Rua" name="placeRoad" id="placeRoad" value="<%=place2.getRoad() %>">
 										<div>
 											<span class="style-error" id="errorPlaceRoad"
 												style="display: none;">Bairro invalido, insira os
@@ -104,7 +102,7 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 								<div class="col">
 									<div class="form-group">
 										<input type="number" class="form-control radius input-form"
-											placeholder="Número" name="numberPlace" id="numberPlace" value="<%place2.getNumber(); %>">
+											placeholder="Número" name="numberPlace" id="numberPlace" value="<%=place2.getNumber() %>">
 										<div>
 											<span class="style-error" id="errorNumberPlace"
 												style="display: none;">Número invalido</span>
@@ -116,7 +114,7 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 								<div class="col">
 									<div class="form-group">
 										<input type="number" class="form-control radius input-form"
-											placeholder="Cep" name="cepPlace" id="cepPlace" value="<%place2.getCep(); %>">
+											placeholder="Cep" name="cepPlace" id="cepPlace" value="<%=place2.getCep() %>">
 										<div>
 											<span class="style-error" id="errorCepPlace"
 												style="display: none;">CEP invalido,quantidade de
@@ -128,7 +126,7 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 									<div class="form-group">
 										<input type="text" class="form-control radius input-form"
 											placeholder="Complemento" name="complementPlace"
-											id="complementPlace" value="<%place2.getComplement(); %>">
+											id="complementPlace" value="<%=place2.getComplement() %>">
 										<div>
 											<span class="style-error" id="errorComplementPlace"
 												style="display: none;">Complemento invalido, insira
@@ -141,7 +139,7 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 								<div class="col">
 									<div class="form-group">
 										<input type="text" class="form-control radius input-form"
-											placeholder="Cidade" name="cityPlace" id="cityPlace" value="<%place2.getCity(); %>">
+											placeholder="Cidade" name="cityPlace" id="cityPlace" value="<%=place2.getCity() %>">
 										<div>
 											<span class="style-error" id="errorCityPlace"
 												style="display: none;">Cidade invalido, insira os
@@ -152,7 +150,7 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 								<div class="col">
 									<div class="form-group">
 										<input type="text" class="form-control radius input-form"
-											placeholder="Estado" name="statePlace" id="statePlace" value="<%place2.getState(); %>">
+											placeholder="Estado" name="statePlace" id="statePlace" value="<%=place2.getState() %>">
 										<div>
 											<span class="style-error" id="errorStatePlace"
 												style="display: none;">Estado invalido, insira os
