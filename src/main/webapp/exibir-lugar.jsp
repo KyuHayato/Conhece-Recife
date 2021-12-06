@@ -90,7 +90,15 @@ Place place = dados1.getPlace(id);
 				</aside>
 			</div>
 		</div>
-
+<div class="row justify-content-center">
+		<div class="col-4">
+			<button type="button" class="btn button-home radius mt-4">
+				<a href="index.jsp"
+					style="color: black; text-decoration: none; background: #d3d3d3; border-radius: 10px/20px; padding: 10px; border: 1px solid;">
+					< Voltar</a>
+			</button>
+		</div>
+	</div>
 		<div
 			style="align-items: center; text-align: center; margin-top: 20px;">
 
@@ -134,7 +142,7 @@ Place place = dados1.getPlace(id);
 		</div>
 
 	</div>
-
+	
 
 </body>
 
