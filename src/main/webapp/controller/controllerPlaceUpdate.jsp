@@ -17,7 +17,29 @@
 <%
 
 try {
+	/*
+	idPlace=26&
+	namePlace=Museu+Cais+do+Sert%E3o&
+	placeRoad=AV.+ALFREDO+LISBOA&
+	numberPlace=0&
+	cepPlace=50030150&
+	complementPlace=teste&
+	cityPlace=Recife&
+	statePlace=Pernambuco&
+	descriptionPlace=fdsfsdfsd
+	
+			descriptionPlace
+			statePlace
+			cityPlace
+			complementPlace
+			cepPlace
+			numberPlace
+			placeRoad
+			namePlace
+			idPlace
+	*/
 	//aqui recebe os inputs do formulario lugares
+	String idPlace = request.getParameter("idPlace");
 	String namePlace = request.getParameter("namePlace");
 	String districtPlace = request.getParameter("districtPlace");
 	String placeRoad = request.getParameter("placeRoad");
@@ -26,9 +48,10 @@ try {
 	String complementPlace = request.getParameter("complementPlace");
 	String statePlace = request.getParameter("statePlace");
 	String cityPlace = request.getParameter("cityPlace");
-
+	String descriptionPlace = request.getParameter("descriptionPlace");
 	//pega o parametro recebido acima e envia para o banco
 	Place lugar = new Place();
+	lugar.setId(Integer.parseInt(idPlace));
 	lugar.setName(namePlace);
 	lugar.setDescription(districtPlace);
 	lugar.setCity(cityPlace);
@@ -42,10 +65,10 @@ try {
 	PlaceDAO dados1 = new PlaceDAO();
 	dados1.update(lugar);
 	
-	System.out.println("executado com sucesso");
+	out.println("executado com sucesso");
 	response.sendRedirect("../listagem-de-lugares-form.jsp");
 }catch(Exception ex){
-	System.out.println(ex .getMessage());
+	out.println(ex .getMessage());
 }
 %>
 </body>

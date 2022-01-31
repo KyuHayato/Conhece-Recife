@@ -86,9 +86,10 @@ public class PartnerDAO {
 
 	public void updatePartner(Partner partner) throws SQLException, Exception {
 
-		String sql = "UPDATE parceiro SET nome = ?, categoria = ?, "
-				+ " cidade = ?,estado = ?, rua = ?, complemento = ?, cep = ?, bairro = ?,"
-				+ " numero = ?, telefone = ? WHERE id_parceiro = ? ";
+//		String sql = "UPDATE parceiro SET nome = ?, categoria = ?, "
+//				+ " cidade = ?,estado = ?, rua = ?, complemento = ?, cep = ?, bairro = ?,"
+//				+ " numero = ?, telefone = ? WHERE id_parceiro = ? ";
+		String sql = " UPDATE parceiro SET nome = ?, categoria = ?, cidade = ?,estado = ?, rua = ?, complemento = ?, cep = ?, bairro = ?, numero = ?, telefone = ? WHERE id_parceiro = ? ";
 		
 		this.abrirConexao();
 
@@ -152,10 +153,10 @@ public class PartnerDAO {
 	public Partner getPartner(int id) throws Exception {
 
 		Partner partner = new Partner();
-		String sql = " select partner.id_parceiro, partner.nome, partner.categoria, partner.cidade, partner.rua,"
-				+ "partner.complemento, partner.cep, partner.bairro, partner.estado,"
-				+ "partner.numero, partner.telefone ";
-		sql += " from parceiro as partner";
+		String sql = "SELECT partner.id_parceiro, partner.nome, partner.categoria, partner.cidade, partner.rua, ";
+		sql += "partner.complemento, partner.cep, partner.bairro, partner.estado,partner.numero, partner.telefone ";
+		sql += "FROM parceiro";
+		sql += " WHERE partner.id_parceiro = ?";
 		this.abrirConexao();
 		PreparedStatement preparedStatement = this.conn.prepareStatement(sql);
 

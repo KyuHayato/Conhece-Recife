@@ -25,6 +25,7 @@
                 style="position: relative;width: 650.42px;left:72px;height: 266px;top: -13px;">
             <img src="images/Conhece Recife Logo.png" alt="logo"
                 style="position: absolute;width: 162px;height: 170px;left: 170px;top: 14px;">
+                
         </div>
     </header>
 
@@ -211,7 +212,14 @@
         </div>
 
     </section>
-
+ <div class="row justify-content-center">
+						<div class="col-4">
+							<button type="button" class="btn button-home radius mt-4">
+								<a href="index.jsp" style="color: black; text-decoration: none;">
+									< Home</a>
+							</button>
+						</div>
+					</div>
     <footer>
         <div class="row">
 

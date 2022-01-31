@@ -75,7 +75,9 @@
 						out.print("</td>");
 						out.print("<td>");
 						out.print("<button type='button' class='btn button-home radius pt-2' style='background-color: red; height:40px;'>");
-						out.print("<a href='#' style='color: white; font-weight: strong; text-decoration: none; '>Excluir</a></button>");
+						out.print(
+						"<a href='#' style='color: white; font-weight: strong; text-decoration: none;' onclick='abrirMensagemRemocao("
+								+ place.getId() + ")');>Excluir</a></button>");
 						out.print("</td>");
 						out.print(" </tr>");
 					}
@@ -105,3 +107,39 @@
 			</div>
 		</footer>
 	</div>
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Atenção</h4>
+					<button type="button" class="close" data-dismiss="modal">×</button>
+				</div>
+				<!-- Modal body -->
+				<div class="modal-body">Deseja realmente remover o lugar?</div>
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger"
+						onclick="deletePlace();">Remover</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+	$(document).ready(
+			function() {
+				let selectID;
+				console.log(selectID);
+				abrirMensagemRemocao = function(id) {
+					console.log("entrou e esse", id);
+					selectID = id;
+					$("#myModal").modal();
+				}
+				deletePlace = function(id) {
+					window.location.href = "controller/controllerDeletePlace.jsp?id="
+							+ selectID;
+				}
+
+			});
+</script>

@@ -49,16 +49,24 @@
             style="position: absolute;width: 133.5px;height: 135px;top: 277px;right:1000px;left:45px;">
         </div>
         <div>
-            <img id="rectangle" style="margin-left: 5%; margin-top: 300px; ">
+            <img id="rectangle" style="margin-left: 4%; margin-top: 220px; width:79%;">
             <img src="images/habibs.png" style="width: 12%; margin-left: 70%;position:absolute; margin-top: 20%;">
             <img src="images/Rectangle-1.png" style="width: 12%; margin-left: 52%; position:absolute; margin-top: 20%;">
             <img src="images/Rectangle-2.png" style="width: 20%; margin-left: 30%;position:absolute;  margin-top: 23%;">
             <img src="images/Rectangle-3.png" style="width: 17%; margin-left: 8%;position:absolute;  margin-top: 24%;">
-            <img src="images/rua.jpg" style="margin-left: 200px; margin-top: 100px; border-radius: 0px 200px 200px 200px">
+            <img src="images/rua.jpg" style="margin-left: 100px; margin-top: 100px; border-radius: 0px 200px 200px 200px; width: 80%;" >
         </div>
     </section>
         </div>
     </section>
+    
+    <div class="row justify-content-center">
+      <div class="col-4">
+           <button type="button" class="btn button-home radius mt-4 ml-5">
+              <a href="index.jsp" style="color: black; text-decoration: none;">
+              < Home</a></button>
+        </div>
+    </div>
 
 
 
@@ -67,12 +75,13 @@
             <div class="col-6">
                 <figure class="ml-5">
                     <img src="images/Rectangle _amarelo_base.png" alt="retangulo2"
-                        style="position: relative; margin-top: 500px;"> 
+                        style="position: relative; margin-top: 15px;"> 
                 </figure>
             </div>
         </div>
     </footer>
 
+		
 
 
     

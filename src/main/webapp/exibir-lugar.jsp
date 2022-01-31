@@ -44,7 +44,7 @@ Place place = dados1.getPlace(id);
 	<div class="container">
 
 		<div class="row" style="margin-top: 75px;">
-			<div class="col-sm-6">
+			<div class="col-sm-6" style="padding-top: 100px;">
 
 				<!-- faltando essa classe colocar no projeto -->
 				<article class="post_1"
@@ -67,19 +67,17 @@ Place place = dados1.getPlace(id);
 							<%=place.getName()%></h2>
 					</div>
 					<div style="text-align: right; font-size: 50px; margin-top: 40px;">
-						<img src="images/image1.png" alt="icone_acess"> <img
-							src="images/image2.png" alt="icone_acess"> <img
-							src="images/image3.png" alt="icone_acess"> <img
-							src="images/image4.png" alt="icone_acess"> <img
-							src="images/image5.png" alt="icone_acess">
+						<img src="" > <img
+							src="" > <img
+							src="" > <img
+							src="" > <img
+							src="" >
 
 
 					</div>
 					<div style="align-items: center; text-align: center;">
-						<img src="images/rio.jpg" alt="Rio_Recife" width="100%"
-							style='position: relative; top: 0px; left: 0px;'> <img
-							src="images/seta_carrossel.png" alt="seta"
-							style='position: absolute; top: 230px; left: 92%;'>
+						<img src="images/recife-image.jpg" alt="Rio_Recife" width="100%"
+							style='position: relative; top: 0px; left: 0px;'> 
 					</div>
 					<div
 						style="align-items: center; text-align: center; margin-top: 30px;">

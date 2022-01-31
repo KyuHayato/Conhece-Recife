@@ -64,6 +64,7 @@ public class PlaceDAO {
 		preparedStatement.setString(7, place.getDistrict());
 		preparedStatement.setString(8, place.getState());
 		preparedStatement.setInt(9, place.getNumber());
+		preparedStatement.setInt(10, place.getId());
 
 		// execute insert SQL stetement
 		preparedStatement.executeUpdate();

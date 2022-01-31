@@ -73,7 +73,7 @@
 						out.print("<td>" + partner.getNumber() + "</td>");
 						out.print("<td>");
 						out.print(
-						"<a class='btn button-home radius pt-2 text-light' style='background-color: green; height:40px;' href='listagem-atualiza-parceiros-form.jsp?id=" + partner.getId() + "'>");
+						"<a class='btn button-home radius pt-2 text-light' style='background-color: green; height:40px;' href='atualiza-parceiros-form.jsp?id=" + partner.getId() + "'>");
 						out.print("Atualizar</a>");
 						out.print("</td>");
 						out.print("<td>");
@@ -112,159 +112,6 @@
 		</footer>
 	</div>
 
-	<!-- Modal -->
-	<div class="modal fade" id="alterPartnerModal" tabindex="-1"
-		role="dialog" aria-labelledby="alterModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content color-background">
-				<div class="modal-header">
-					<h5 class="modal-title" id="alterModalLabel">Atualizar dados</h5>
-					<button type="button" class="close" data-dismiss="modal"
-						aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="p-5 radius color-background">
-					<form action="controller/controllerPartner.jsp" class="form">
-						<div class="row justify-content-center">
-
-							<div class="row">
-								<div class="col">
-									<div class="form-group">
-										<input type="text" class="form-control radius input-form"
-											name="partnerName" id="partnerName"
-											placeholder="Nome do Parceiro">
-										<div>
-											<span class="style-error" id="errorPartnerName"
-												style="display: none;">Nome invalido, insira os dados
-												de forma correta</span>
-										</div>
-									</div>
-								</div>
-								<div class="col">
-									<div class="form-group radius">
-										<input type="text" class="form-control radius input-form p-2"
-											placeholder="Categoria" name="categoryPartner"
-											id="categoryPartner">
-										<div>
-											<span class="style-error" id="errorCategoryPartner"
-												style="display: none;">Digite uma categoria</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col">
-									<div class="form-group">
-										<input type="text" class="form-control radius input-form"
-											placeholder="Rua" name="roadPartner" id="roadPartner">
-										<div>
-											<span class="style-error" id="errorPartnerRoad"
-												style="display: none;">Rua invalida, insira os dados
-												de forma correta</span>
-										</div>
-									</div>
-								</div>
-								<div class="col">
-									<div class="form-group">
-										<input type="number" class="form-control radius input-form"
-											placeholder="Número" name="numberPartner" id="numberPartner">
-										<div>
-											<span class="style-error" id="errorNumberPartner"
-												style="display: none;">Numero invalido, insira os
-												dados de forma correta</span>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col">
-									<div class="form-group">
-										<input type="number" class="form-control radius input-form"
-											placeholder="Cep" name="cepPartner" id="cepPartner">
-										<div>
-											<span class="style-error" id="errorCepPartner"
-												style="display: none;">CEP invalido, insira os dados
-												de forma correta</span>
-										</div>
-									</div>
-								</div>
-								<div class="col">
-									<div class="form-group">
-										<input type="text" class="form-control radius input-form"
-											placeholder="Complemento" name="complementPartner"
-											id="complementPartner">
-										<div>
-											<span class="style-error" id="errorComplementPartner"
-												style="display: none;">Complemento invalido, insira
-												os dados de forma correta</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col">
-									<div class="form-group">
-										<input type="text" class="form-control radius input-form"
-											placeholder="Cidade" name="cityPartner" id="cityPartner">
-										<div>
-											<span class="style-error" id="errorCityPartner"
-												style="display: none;">Cidade invalido, insira os
-												dados de forma correta</span>
-										</div>
-									</div>
-								</div>
-								<div class="col">
-									<div class="form-group">
-										<input type="text" class="form-control radius input-form"
-											placeholder="Estado" name="statePartner" id="statePartner">
-										<div>
-											<span class="style-error" id="errorStatePartner"
-												style="display: none;">Estado invalido, insira os
-												dados de forma correta</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col">
-									<div class="form-group">
-										<input type="text" class="form-control radius input-form"
-											placeholder="Bairro" name="districtPartner"
-											id="districtPartner">
-										<div>
-											<span class="style-error" id="errorDistrictPartner"
-												style="display: none;">Bairro invalido, insira os
-												dados de forma correta</span>
-										</div>
-									</div>
-								</div>
-								<div class="col">
-									<div class="form-group">
-										<input type="number" class="form-control radius input-form"
-											placeholder="Telefone" name="phoneNumber" id="phoneNumber">
-										<div>
-											<span class="style-error" id="errorPhoneNumber"
-												style="display: none;">Numero de telefone invalido
-												invalido</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row justify-content-end">
-							<button type="button" class="btn btn-secondary radius mr-2 mt-3"
-								data-dismiss="modal">Sair</button>
-							<button type="submit" class="btn btn-dark radius mt-3"
-								onclick="validateFormRegisterPartner(this)">Atualizar</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<div class="modal fade" id="myModal">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -274,7 +121,7 @@
 					<button type="button" class="close" data-dismiss="modal">×</button>
 				</div>
 				<!-- Modal body -->
-				<div class="modal-body">Deseja realmente remover o aluno?</div>
+				<div class="modal-body">Deseja realmente remover o parceiro?</div>
 				<!-- Modal footer -->
 				<div class="modal-footer">
 					<button type="button" class="btn btn-danger"

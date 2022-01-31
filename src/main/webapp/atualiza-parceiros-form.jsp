@@ -19,9 +19,9 @@
 <body>
 
 <%
-PartnerDAO dados = new PartnerDAO();
+PartnerDAO dados1 = new PartnerDAO();
 String id=request.getParameter("id");
-Partner partner2 = dados.getPartner(Integer.parseInt(id));
+Partner partner2 = dados1.getPartner(Integer.parseInt(id));
 
 
 %>
@@ -57,6 +57,19 @@ Partner partner2 = dados.getPartner(Integer.parseInt(id));
                         <div class=" border border-dark p-4 radius" style="background: rgba(255, 247, 206, 0.33);">
                             <div class="row">
                                 <div class="col">
+                                	<div class="form-group">
+									ID
+										<input readonly="true" type="text" class="form-control radius input-form"
+											placeholder="Nome" name="idPlace" id="idPlace"
+											onchange="validateNamePlace(this)"
+											
+											value="<%=partner2.getId() %>" >
+										
+										<div>
+										
+										</div>
+									</div>
+								</div>
                                     <div class="form-group">
                                         <input type="text" class="form-control radius input-form" name="partnerName"
                                             id="partnerName" placeholder="Nome do Parceiro" value="<%=partner2.getPartnerName() %> ">

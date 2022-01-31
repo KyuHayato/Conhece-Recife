@@ -14,6 +14,7 @@
 
 try {	
 	//aqui recebe os inputs do formulario lugares
+	String idPartner = request.getParameter("idPartner");
 	String namePartner = request.getParameter("partnerName");
 	String categoryPartner = request.getParameter("categoryPartner");
 	String roadPartner = request.getParameter("roadPartner");
@@ -26,7 +27,9 @@ try {
 	String phoneNumber = request.getParameter("phoneNumber");
 
 	//pega o parametro recebido acima e envia para o banco
+	
 	Partner partner = new Partner();
+	partner.setId(Integer.parseInt(idPartner));
 	partner.setPartnerName(namePartner);
 	partner.setCategory(categoryPartner);
 	partner.setCity(cityPartner);
@@ -39,7 +42,7 @@ try {
 	partner.setPhoneNumber(Integer.parseInt(phoneNumber));
 	
 	PartnerDAO dados1 = new PartnerDAO();
-	dados1.addPartner(partner);
+	dados1.updatePartner(partner);
 	
 	System.out.println("executado com sucesso");
 	response.sendRedirect("../listagem-de-parceiros-form.jsp");

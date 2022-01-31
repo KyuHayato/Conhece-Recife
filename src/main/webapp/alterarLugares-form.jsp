@@ -63,6 +63,7 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 							<div class="row">
 								<div class="col">
 									<div class="form-group">
+									ID
 										<input readonly="true" type="text" class="form-control radius input-form"
 											placeholder="Nome" name="idPlace" id="idPlace"
 											onchange="validateNamePlace(this)"
@@ -77,6 +78,7 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 
 								<div class="col-6">
 									<div class="form-group">
+									NOME
 										<input type="text" class="form-control radius input-form"
 											placeholder="Bairro" name="namePlace" id="namePlace" value="<%=place2.getName() %>">
 										<div>
@@ -89,7 +91,7 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 							</div>
 							<div class="row">
 								<div class="col">
-									<div class="form-group">
+									<div class="form-group"> RUA
 										<input type="text" class="form-control radius input-form"
 											placeholder="Rua" name="placeRoad" id="placeRoad" value="<%=place2.getRoad() %>">
 										<div>
@@ -100,7 +102,7 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 									</div>
 								</div>
 								<div class="col">
-									<div class="form-group">
+									<div class="form-group">NUMERO
 										<input type="number" class="form-control radius input-form"
 											placeholder="Número" name="numberPlace" id="numberPlace" value="<%=place2.getNumber() %>">
 										<div>
@@ -112,7 +114,7 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 							</div>
 							<div class="row">
 								<div class="col">
-									<div class="form-group">
+									<div class="form-group">CEP
 										<input type="number" class="form-control radius input-form"
 											placeholder="Cep" name="cepPlace" id="cepPlace" value="<%=place2.getCep() %>">
 										<div>
@@ -123,7 +125,7 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 									</div>
 								</div>
 								<div class="col">
-									<div class="form-group">
+									<div class="form-group">COMPLEMENTO
 										<input type="text" class="form-control radius input-form"
 											placeholder="Complemento" name="complementPlace"
 											id="complementPlace" value="<%=place2.getComplement() %>">
@@ -137,7 +139,7 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 							</div>
 							<div class="row">
 								<div class="col">
-									<div class="form-group">
+									<div class="form-group">CIDADE
 										<input type="text" class="form-control radius input-form"
 											placeholder="Cidade" name="cityPlace" id="cityPlace" value="<%=place2.getCity() %>">
 										<div>
@@ -148,7 +150,7 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 									</div>
 								</div>
 								<div class="col">
-									<div class="form-group">
+									<div class="form-group">ESTADO
 										<input type="text" class="form-control radius input-form"
 											placeholder="Estado" name="statePlace" id="statePlace" value="<%=place2.getState() %>">
 										<div>
@@ -156,12 +158,24 @@ Place place2 =dados1.getPlace2(Integer.parseInt(id));
 												style="display: none;">Estado invalido, insira os
 												dados de forma correta</span>
 										</div>
-									</div>
+									</div>districtPlace
+								</div>
+								
+								<div class="col">
+									<div class="form-group">Bairro
+										<input type="text" class="form-control radius input-form"
+											placeholder="Bairro" name="districtPlace" id="districtPlace" value="<%=place2.getDistrict() %>">
+										<div>
+											<span class="style-error" id="errorStatePlace"
+												style="display: none;">Estado invalido, insira os
+												dados de forma correta</span>
+										</div>
+									</div>districtPlace
 								</div>
 							</div>
 							<div class="row">
 								<div class="col">
-									<div class="form-group">
+									<div class="form-group">DESCRICAO
 										<textarea type="text" class="form-control radius input-form"
 											placeholder="Descrição" rows="10" name="descriptionPlace"
 											id="descriptionPlace"></textarea>

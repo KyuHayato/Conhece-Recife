@@ -34,7 +34,7 @@
                 <img src=images/bolas-design.png
                     style="position: absolute;width: 133.5px;height: 135px;top: 277px;right:330px;left:0,8px;">
             </div>
-            <form method="POST">
+            <form method="POST" >
                 <div class="row justify-content-center">
                     <div class="col-lg-4">
                         <div class=" border border-dark p-4 radius" style="background: rgba(255, 247, 206, 0.33);">
