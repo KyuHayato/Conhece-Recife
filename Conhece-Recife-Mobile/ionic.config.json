@@ -1,0 +1,7 @@
+{
+  "name": "Conhece-Recife-Mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
