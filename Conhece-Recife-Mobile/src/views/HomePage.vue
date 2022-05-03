@@ -3,8 +3,17 @@
     <ion-content :fullscreen="true">
       <div id="container">
         <div>
-          <ion-img src="../../assets/Conhece-recife.svg" style="width: 201px; height: 210px; padding-bottom: 20px;"></ion-img>
-          <ion-button> Vem conhecer! </ion-button>
+          <ion-img
+            src="../../assets/Conhece-recife.svg"
+            style="
+              width: 140px;
+              height: 151px;
+              padding-bottom: 20px;
+              display: block;
+              margin: 0px auto;
+            "
+          ></ion-img>
+          <ion-button @click="onSelectedLink()"> Vem conhecer! </ion-button>
         </div>
       </div>
     </ion-content>
@@ -23,17 +32,24 @@ export default defineComponent({
     IonImg,
   },
   data: function () {
-    return {
-      teste: "@/Conhece-Recife-Logo.svg",
-    };
+    return {};
+  },
+  methods:{ 
+    //ajeitar o metodo 
+    onSelectedLink() {
+      this.$router.push({ name: 'home' });
+      
+    },
   },
 });
 </script>
 
 <style scoped>
-ion-page {
-  --ion-background-color: #2f80ed;
+
+ion-content {
+  --background: url(../../public/assets/CRB.svg) no-repeat center;
 }
+
 ion-button {
   --background: #e78500;
 }
