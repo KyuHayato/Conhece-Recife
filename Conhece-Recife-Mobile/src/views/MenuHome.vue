@@ -13,7 +13,35 @@
               margin: 0px auto;
             "
           ></ion-img>
-          <ion-button href="/menu/"> Vem conhecer! </ion-button>
+          <div>
+            <ion-row>
+              <ion-col size="12">
+                <ion-button size="large" href="/menu/places/">
+                  Lugares
+                </ion-button>
+              </ion-col>
+              <ion-col size="12">
+                <ion-button size="large" href="/menu/streets">
+                  Ruas, etc.
+                </ion-button>
+              </ion-col>
+              <ion-col size="12">
+                <ion-button size="large" href="/menu/contacts">
+                  Contato
+                </ion-button>
+              </ion-col>
+              <ion-col size="12">
+                <ion-button size="large" href="/menu/partners">
+                  Parceiros
+                </ion-button>
+              </ion-col>
+              <ion-col size="12">
+                <ion-button size="large" href="/menu/whopage">
+                  Quem somos
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </div>
         </div>
       </div>
     </ion-content>
@@ -25,7 +53,7 @@ import { IonContent, IonButton, IonImg } from "@ionic/vue";
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "HomePage",
+  name: "MenuPage",
   components: {
     IonContent,
     IonButton,
@@ -40,7 +68,7 @@ export default defineComponent({
 
 <style scoped>
 ion-content {
-  --background: url(../../public/assets/CRB.svg) no-repeat center;
+  --background: #2f80ed;
 }
 
 ion-button {
