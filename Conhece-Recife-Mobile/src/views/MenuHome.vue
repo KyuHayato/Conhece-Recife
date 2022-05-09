@@ -6,8 +6,8 @@
           <ion-img
             src="../../assets/Conhece-recife.svg"
             style="
-              width: 140px;
-              height: 151px;
+              width: 135px;
+              height: 143px;
               padding-bottom: 20px;
               display: block;
               margin: 0px auto;
@@ -16,27 +16,47 @@
           <div>
             <ion-row>
               <ion-col size="12">
-                <ion-button size="large" href="/menu/places/">
+                <ion-button
+                  size="large"
+                  href="/menu/places/"
+                  class="button-style"
+                >
                   Lugares
                 </ion-button>
               </ion-col>
               <ion-col size="12">
-                <ion-button size="large" href="/menu/streets">
+                <ion-button
+                  size="large"
+                  href="/menu/streets"
+                  class="button-style"
+                >
                   Ruas, etc.
                 </ion-button>
               </ion-col>
               <ion-col size="12">
-                <ion-button size="large" href="/menu/contacts">
+                <ion-button
+                  size="large"
+                  href="/menu/contacts"
+                  class="button-style"
+                >
                   Contato
                 </ion-button>
               </ion-col>
               <ion-col size="12">
-                <ion-button size="large" href="/menu/partners">
+                <ion-button
+                  size="large"
+                  href="/menu/partners"
+                  class="button-style"
+                >
                   Parceiros
                 </ion-button>
               </ion-col>
               <ion-col size="12">
-                <ion-button size="large" href="/menu/whopage">
+                <ion-button
+                  size="large"
+                  href="/menu/whopage"
+                  class="button-style"
+                >
                   Quem somos
                 </ion-button>
               </ion-col>
@@ -74,7 +94,14 @@ ion-content {
 ion-button {
   --background: #e78500;
 }
-
+.button-style {
+  width: 329.51px;
+  height: 78px;
+  border-radius: 15px;
+  border: 2px solid #e78500;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 #container {
   text-align: center;
   position: absolute;
