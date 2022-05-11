@@ -1,49 +1,47 @@
-import { createRouter, createWebHistory } from '@ionic/vue-router';
-import { RouteRecordRaw } from 'vue-router';
-import HomePage from '../views/HomePage.vue'
-import MenuHome from '../views/MenuHome.vue'
+import { createRouter, createWebHistory } from "@ionic/vue-router";
+import { RouteRecordRaw } from "vue-router";
+import HomePage from "../views/HomePage.vue";
+import MenuHome from "../views/MenuHome.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
-    redirect: '/home'
+    path: "/",
+    redirect: "/home",
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: HomePage
+    path: "/home",
+    name: "Home",
+    component: HomePage,
   },
   {
-    path: '/menu/',
+    path: "/menu/",
     component: MenuHome,
-    children: [
-      {
-        path: 'places',
-        component: () => import('@/views/PlacesPage.vue')
-      },
-      {
-        path: 'partners',
-        component: () => import('@/views/PartnersPage.vue')
-      },
-      {
-        path: 'contacts',
-        component: () => import('@/views/ContactPage.vue')
-      },
-      {
-        path: 'streets',
-        component: () => import('@/views/StreetsPage.vue')
-      },
-      {
-        path: 'whopage',
-        component: () => import('@/views/WhoPage.vue')
-      }
-    ]
-  }
-]
+  },
+  {
+    path: "/menu/places/",
+    component: () => import("@/views/PlacesPage.vue"),
+  },
+  {
+    path: "/menu/partners/",
+    component: () => import("@/views/PartnersPage.vue"),
+  },
+  {
+    path: "/menu/contacts/",
+    component: () => import("@/views/ContactPage.vue"),
+  },
+  {
+    path: "/menu/streets/",
+    component: () => import("@/views/StreetsPage.vue"),
+  },
+  {
+    path: "/menu/whopage/",
+    component: () => import("@/views/WhoPage.vue"),
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
