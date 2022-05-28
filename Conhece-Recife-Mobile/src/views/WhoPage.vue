@@ -1,3 +1,3 @@
 <template>
-    QUEM SOMOS 
+    quem somos
 </template>
