@@ -1,8 +1,8 @@
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-      <div id="container">
-        <div>
+      <div id="container" class="style-borders-externals">
+        <div class="style-internal">
           <ion-img
             src="../../assets/Conhece-recife.svg"
             style="
@@ -40,11 +40,21 @@ export default defineComponent({
 
 <style scoped>
 ion-content {
-  --background: url(../../public/assets/CRB.svg) no-repeat center;
+  --background: #2f80ed;
 }
 
 ion-button {
   --background: #e78500;
+}
+.style-internal {
+  background: white;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.style-borders-externals {
+  border-bottom: 20px solid #e78500;
+  border-top: 20px solid #e78500;
+  border-radius: 1.5rem;
 }
 
 #container {
