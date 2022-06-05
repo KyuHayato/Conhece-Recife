@@ -127,7 +127,7 @@
             </ion-row>
 
             <ion-row class="linha">
-                <ion-col style="background-color:#2F80ED;" class="coluna" size="4">
+                <ion-col  class="linha4" onclick="console.log('direcionar para tela desejada')" style="background-color:#2F80ED;"  size="4">
                     <ion-card style="background-color:#2F80ED;">
                         <ion-img class="imgGrid"
                             src="https://lh5.googleusercontent.com/p/AF1QipOHfj-37L7-wIIBAzGHLocH96ohUAC2AcVTDRJ1=w256-h240-p-k-no">
@@ -136,14 +136,14 @@
                     </ion-card>
                 </ion-col>
 
-                <ion-col size="8" style="background-color:#2F80ED; padding-left:0;margin-left: 0;">
-                    <ion-card style="background-color:#2F80ED;">
+                <ion-col class="linha4" onclick="console.log('direcionar para tela desejada')" size="8" style="background-color:#2F80ED; padding-left:0;margin-left: 0;">
+                    <ion-card  style="background-color:#2F80ED;" >
                         <ion-card-title class="textTileGrid">PRAÇA DO MARCO ZERO</ion-card-title>
                         <ion-card-subtitle class="textSubtitleGrid">Praça</ion-card-subtitle>
                     </ion-card>
                 </ion-col>
 
-                <ion-col style="background-color:#2F80ED;" class="coluna" size="4">
+                <ion-col  style="background-color:#2F80ED;" size="4">
                     <ion-card style="background-color:#2F80ED;">
                         <ion-img class="imgGrid"
                             src="https://lh5.googleusercontent.com/p/AF1QipOHfj-37L7-wIIBAzGHLocH96ohUAC2AcVTDRJ1=w256-h240-p-k-no">
@@ -165,6 +165,7 @@
 
     RUAS E ETC
 </template>
+
 
   <script lang="ts">
 import { defineComponent } from "vue";
@@ -196,12 +197,17 @@ export default defineComponent({
     },
 
     data:
+
         function () {
             return {};
         },
     methods: {},
 
+    
+
 });
+
+
 </script>
 
 <style scoped>
@@ -220,7 +226,7 @@ ion-card {
 
 ion-toolbar {
     --background: #2f80ed;
-  
+
 }
 
 swiper-slide {
@@ -234,10 +240,11 @@ swiper-slide {
 }
 
 
-.toolbar{
-   padding-bottom: 30px;
-   padding-top: 30px;
+.toolbar {
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
+
 .imgGrid {
 
     box-sizing: border-box;
@@ -266,21 +273,28 @@ swiper-slide {
 
     background-color: #2F80ED
 }
-.seach{
+
+.seach {
     margin-top: 1%;
-   
-    margin-bottom: 10px;
+
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1px;
     padding: 0%;
-    padding-bottom: 1px;
-    margin: 0%;
-    border: #130a72;
-   
+
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    width: 90%;
+
+
 }
 
-.grid{
-  margin-top: -30px;
+.grid {
+    margin-top: -30px;
     padding: 1px;
 }
+
 .cardBot {
     color: #ffffff
 }
@@ -335,9 +349,11 @@ swiper-slide {
     order: 0;
     flex-grow: 0;
 }
-.textToolbar{
+
+.textToolbar {
     color: #ffffff;
 }
+
 .textSubtitleGrid {
     text-align: start;
     color: #ffffff;
