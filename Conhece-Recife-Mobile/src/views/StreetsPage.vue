@@ -1,4 +1,6 @@
 <template >
+
+
     <ion-header>
 
         <ion-toolbar class="toolbar">
@@ -68,11 +70,15 @@
 
         </swiper>
 
-        <ion-searchbar class="seach"></ion-searchbar>
+        <ion-searchbar class="seach"> <ion-searchbar event="text"></ion-searchbar></ion-searchbar>
+
+       
 
 
         <ion-grid class="grid">
+
             <ion-row class="linha">
+               
                 <ion-col style="background-color:#2F80ED;" class="coluna" size="4">
                     <ion-card style="background-color:#2F80ED;">
                         <ion-img class="imgGrid"
@@ -161,6 +167,7 @@
             </ion-row>
 
         </ion-grid>
+     
     </ion-content>
 
     RUAS E ETC
@@ -168,8 +175,11 @@
 
 
   <script lang="ts">
+
+
+
 import { defineComponent } from "vue";
-import { IonImg, IonContent, IonHeader, IonToolbar, IonMenuButton, IonTitle, IonCard } from "@ionic/vue";
+import { IonImg, IonContent, IonHeader, IonToolbar, IonMenuButton, IonTitle, IonCard,IonSearchbar,IonList } from "@ionic/vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 
 import "swiper/css";
@@ -184,11 +194,15 @@ import { IonCol, IonGrid, IonRow } from '@ionic/vue';
 import { Pagination, Navigation } from "swiper";
 
 
+
+
+
+
 export default defineComponent({
     name: "PlacesPage",
     components: {
         IonImg, IonHeader, IonToolbar, IonMenuButton, IonContent, Swiper,
-        SwiperSlide, IonCol, IonGrid, IonRow, IonTitle, IonCard
+        SwiperSlide, IonCol, IonGrid, IonRow, IonTitle, IonCard,IonSearchbar,
     },
     setup() {
         return {
@@ -202,6 +216,8 @@ export default defineComponent({
             return {};
         },
     methods: {},
+
+
 
     
 
