@@ -11,7 +11,8 @@ estado:{ type : String ,required:true},
 complemento:{ type : String},
 cep:{ type : String ,required:true},
 bairro:{ type : String ,required:true},
-numero:{ type : Number ,required:true}
+numero:{ type : Number ,required:true},
+acessibilidade:{ type : String ,required:true},
 },{
     versionkey: false
 });

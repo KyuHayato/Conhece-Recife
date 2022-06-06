@@ -13,6 +13,22 @@ const getAll = (req,res) => {
 };
 
 
+
+
+
+const getByAcessibilidade = (req, res) => {
+  const acessibilidade = req.params.acessibilidade;
+    lugaresMongo.find({acessibilidade},'id nome descricao cidade ',function(err,lugares){
+      if(err){
+        res.status(500).send('Não temos o registro desse profissional')
+      }else
+        return res.status(200).send(lugares);
+    })
+};
+
+
+
+
 const postLugares = (req,res)=>{
     console.log(req.body);
 
@@ -65,5 +81,6 @@ module.exports = {
     getAll,
     postLugares,
     deleteLugares,
-    putLugares
+    putLugares,
+    getByAcessibilidade
 };

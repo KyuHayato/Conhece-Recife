@@ -4,6 +4,7 @@ const controller = require('../Controller/lugarController');
 
 
 route.get('/',controller.getAll);
+route.get('/lugares/:acessibilidade',controller.getByAcessibilidade);
 
 route.post('/enviar',controller.postLugares);
 
