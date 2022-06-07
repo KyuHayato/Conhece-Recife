@@ -12,15 +12,23 @@ const getAll = (req,res) => {
       });
 };
 
-
-
+const getById = (req, res) => {
+  const id = req.params.id
+  lugaresMongo.find({ id }, function (err, lugares) {
+      if (err) {
+          res.status(500).send({ message: err.message })
+      } else {
+          res.status(200).send(lugares)
+      }
+  })
+}
 
 
 const getByAcessibilidade = (req, res) => {
   const acessibilidade = req.params.acessibilidade;
-    lugaresMongo.find({acessibilidade},'id nome descricao cidade ',function(err,lugares){
+    lugaresMongo.find({acessibilidade},'nome descricao cidade rua estado complemento cep bairro numero  ',function(err,lugares){
       if(err){
-        res.status(500).send('Não temos o registro desse profissional')
+        res.status(500).send('Não temos o registro')
       }else
         return res.status(200).send(lugares);
     })
@@ -82,5 +90,6 @@ module.exports = {
     postLugares,
     deleteLugares,
     putLugares,
-    getByAcessibilidade
+    getByAcessibilidade,
+    getById
 };

@@ -4,6 +4,8 @@ const controller = require('../Controller/parceiroController');
 
 
 route.get('/',controller.getAll);
+route.get("/cupom", controller.getCupom);
+route.get('/parceiros/:bairro',controller.getByBairro);
 
 route.post('/enviar',controller.postParceiros);
 

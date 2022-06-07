@@ -14,6 +14,9 @@ cep:{ type : String ,required:true},
 bairro:{ type : String ,required:true},
 numero:{ type : Number ,required:true},
 cupom:{ type : Boolean ,required:true},
+tipoCupom:{ type : String ,required:true},
+descricao:{ type : String ,required:true},
+
 },{
     versionkey: false
 });
