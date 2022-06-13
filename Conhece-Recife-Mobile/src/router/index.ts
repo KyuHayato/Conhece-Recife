@@ -8,6 +8,7 @@ const routes: Array<RouteRecordRaw> = [
     path: "/",
     redirect: "/home",
   },
+  
   {
     path: "/home",
     name: "Home",
@@ -24,6 +25,10 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/menu/partners/",
     component: () => import("@/views/PartnersPage.vue"),
+  },
+  {
+    path: "/menu/details/",
+    component: () => import("@/views/DetailsPage.vue"),
   },
   {
     path: "/menu/contacts/",
