@@ -67,7 +67,7 @@
   <script lang="ts">
 import { defineComponent } from "vue";
 import { IonImg, IonContent, IonHeader, IonToolbar } from "@ionic/vue";
-
+import APIService from "@/services/api.service";
 export default defineComponent({
   name: "PlacesPage",
   components: {
@@ -75,9 +75,19 @@ export default defineComponent({
 
   },
   data: function () {
-    return {};
+    return {
+      places: undefined,
+    };
   },
-  methods: {},
+  methods: {
+     async getPlaces() {
+      const res = await APIService.getPlace();
+      this.places = res.data
+    },
+  },
+   mounted() {
+    this.getPlaces();
+  },
 });
 </script>
 
