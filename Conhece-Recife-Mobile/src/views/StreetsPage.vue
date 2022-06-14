@@ -70,7 +70,7 @@
 
         </swiper>
 
-        <ion-searchbar class="seach"> <ion-searchbar event="text"></ion-searchbar></ion-searchbar>
+        <ion-searchbar class="seach">   </ion-searchbar>
 
        
 
@@ -179,7 +179,7 @@
 
 
 import { defineComponent } from "vue";
-import { IonImg, IonContent, IonHeader, IonToolbar, IonMenuButton, IonTitle, IonCard,IonSearchbar,IonList } from "@ionic/vue";
+import { IonImg, IonContent, IonHeader, IonToolbar, IonMenuButton, IonTitle, IonCard,IonSearchbar,IonCardSubtitle } from "@ionic/vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 
 import "swiper/css";
@@ -202,7 +202,7 @@ export default defineComponent({
     name: "PlacesPage",
     components: {
         IonImg, IonHeader, IonToolbar, IonMenuButton, IonContent, Swiper,
-        SwiperSlide, IonCol, IonGrid, IonRow, IonTitle, IonCard,IonSearchbar,
+        SwiperSlide, IonCol, IonGrid, IonRow, IonTitle, IonCard,IonSearchbar,IonCardSubtitle
     },
     setup() {
         return {
